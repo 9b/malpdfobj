@@ -16,7 +16,7 @@ import optparse
 
 def get_vt_obj(file):
 	url = "https://www.virustotal.com/api/get_file_report.json"
-	parameters = {"resource": file, "key": "a2fec6adeea43e021c3439fc39986b161a06d976f2a534f3cd5fb4333ce2de8f"}
+	parameters = {"resource": file, "key": "your_key"}
 	data = urllib.urlencode(parameters)
 	req = urllib2.Request(url, data)
 	response = urllib2.urlopen(req)
