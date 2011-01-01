@@ -1,3 +1,8 @@
+__description__ = 'Builds JSON object representing a malicious PDF'
+__author__ = 'Brandon Dixon'
+__version__ = '1.0'
+__date__ = '2011/01/01'
+
 import simplejson as json
 import urllib
 import urllib2
@@ -7,6 +12,7 @@ import parser_hash2json
 import pdfid_mod
 import hashlib
 import hash_maker
+import optparse
 
 def get_vt_obj(file):
 	url = "https://www.virustotal.com/api/get_file_report.json"
@@ -47,7 +53,18 @@ def build_obj(file):
 	#build the object and then re-encode
 	fobj = { "hash_data": fhashes, "structure": fstructure, "scans": { "virustotal": fvt, "wepawet": "null" } }
 	return json.dumps(fobj)
-    
-#file assumes the following: absolute path, filename is "hash.pdf.vir"
-file = '/absolut/path/to/file/md5hash.pdf.vir'
-print build_obj(file)
+	
+def main():
+    oParser = optparse.OptionParser(usage='usage: %prog [options]\n' + __description__, version='%prog ' + __version__)
+    oParser.add_option('-f', '--file', default='', type='string', help='file to build abn object from')
+    (options, args) = oParser.parse_args()
+
+	#file assumes the following: absolute path, filename is "hash.pdf.vir"
+    if options.file:
+		print build_obj(options.file)
+    else:
+        oParser.print_help()
+        return
+
+if __name__ == '__main__':
+    main()
