@@ -95,13 +95,16 @@ def main():
 
 		for file in files:
 			if count == 20:
+				if options.verbose:
+					print "Sleeping for 5 minutes"
 				time.sleep(300)
 				count = 0
 			else:
 				output = build_obj(file, options.dir)
 				if options.mongo:
 					con.insert(json.loads(output))
-					print file
+					if options.verbose:
+						print file + " inserted"
 				if options.verbose:
 					print build_obj(file, options.dir)
 				count += 1
