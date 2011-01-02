@@ -15,8 +15,9 @@ import hash_maker
 import optparse
 
 def get_vt_obj(file):
+	key = ''
 	url = "https://www.virustotal.com/api/get_file_report.json"
-	parameters = {"resource": file, "key": "your_key"}
+	parameters = {"resource": file, "key": key}
 	data = urllib.urlencode(parameters)
 	req = urllib2.Request(url, data)
 	response = urllib2.urlopen(req)
@@ -37,14 +38,13 @@ def get_hash_obj(file):
 	data = { 'hashes': { 'file': hashes, 'objects': objs} }
 	return json.dumps(data)
 	
-def build_obj(file):
-	
-	#split file aspects for VirusTotal
-	data = file.split('/')
-	vt_file = data[5]
-	data = vt_file.split('.')
-	vt_hash = data[0]
+def build_obj(file, dir=''):
 
+	if dir != '':
+		file = dir + file
+	
+	vt_hash = hash_maker.get_hash_data(file, "md5")
+	
 	#get the json decoded data
 	fhashes = json.loads(get_hash_obj(file))
 	fstructure = json.loads(get_structure(file))
@@ -56,12 +56,28 @@ def build_obj(file):
 	
 def main():
     oParser = optparse.OptionParser(usage='usage: %prog [options]\n' + __description__, version='%prog ' + __version__)
-    oParser.add_option('-f', '--file', default='', type='string', help='file to build abn object from')
+    oParser.add_option('-f', '--file', default='', type='string', help='file to build an object from')
+    oParser.add_option('-d', '--dir', default='', type='string', help='dir to build an object from')
     (options, args) = oParser.parse_args()
 
 	#file assumes the following: absolute path, filename is "hash.pdf.vir"
     if options.file:
 		print build_obj(options.file)
+    elif options.dir:
+		files = []
+		dirlist = os.listdir(options.dir)
+		for fname in dirlist:
+			files.append(fname)
+		files.sort()
+		count = 0
+
+		for file in files:
+			if count == 20:
+				time.sleep(300)
+				count = 0
+			else:
+				print build_obj(file, options.dir)
+				count += 1
     else:
         oParser.print_help()
         return
