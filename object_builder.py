@@ -13,6 +13,8 @@ import pdfid_mod
 import hashlib
 import hash_maker
 import optparse
+import pymongo
+from pymongo import Connection
 
 def get_vt_obj(file):
 	key = ''
@@ -42,6 +44,12 @@ def get_hash_obj(file):
 	data = { 'hashes': { 'file': hashes, 'objects': objs} }
 	return json.dumps(data)
 	
+def connect_to_mongo(host, port, database, collection):
+	connection = Connection(host, port)
+	db = connection[database]
+	collection = db[collection]
+	return collection
+	
 def build_obj(file, dir=''):
 
 	if dir != '':
@@ -63,11 +71,20 @@ def main():
     oParser = optparse.OptionParser(usage='usage: %prog [options]\n' + __description__, version='%prog ' + __version__)
     oParser.add_option('-f', '--file', default='', type='string', help='file to build an object from')
     oParser.add_option('-d', '--dir', default='', type='string', help='dir to build an object from')
+    oParser.add_option('-m', '--mongo', action='store_true', default=False, help='dump to a mongodb database')
+    oParser.add_option('-v', '--verbose', action='store_true', default=False, help='verbose outpout')
     (options, args) = oParser.parse_args()
+    
+    if options.mongo:
+    	con = connect_to_mongo("localhost", 27017, "pdfs", "malware")
 
 	#file assumes the following: absolute path, filename is "hash.pdf.vir"
     if options.file:
-		print build_obj(options.file)
+    	output = build_obj(options.file)
+    	if options.mongo:
+			con.insert(json.loads(output))
+        if options.verbose:
+			print output
     elif options.dir:
 		files = []
 		dirlist = os.listdir(options.dir)
@@ -81,7 +98,11 @@ def main():
 				time.sleep(300)
 				count = 0
 			else:
-				print build_obj(file, options.dir)
+				output = build_obj(file, options.dir)
+				if options.mongo:
+					con.insert(json.loads(output))
+				if options.verbose:
+					print build_obj(file, options.dir)
 				count += 1
     else:
         oParser.print_help()
