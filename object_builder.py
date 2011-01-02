@@ -27,6 +27,10 @@ def get_vt_obj(file):
 def get_structure(file):
 	structureobj = pdfid_mod.PDFiD2JSON(pdfid_mod.PDFiD(file, True, True, False, True), True)
 	return structureobj
+	
+def get_scores(file):
+	scoreobj = pdfid_mod.Score2JSON(pdfid_mod.PDFiD(file, True, True, False, True))
+	return scoreobj
 
 def get_object_details(file):
 	objdetails = parser_hash2json.conversion(file)
@@ -48,10 +52,11 @@ def build_obj(file, dir=''):
 	#get the json decoded data
 	fhashes = json.loads(get_hash_obj(file))
 	fstructure = json.loads(get_structure(file))
+	fscore = json.loads(get_scores(file))
 	fvt = json.loads(get_vt_obj(vt_hash))
 	
 	#build the object and then re-encode
-	fobj = { "hash_data": fhashes, "structure": fstructure, "scans": { "virustotal": fvt, "wepawet": "null" } }
+	fobj = { "hash_data": fhashes, "structure": fstructure, "scores" : fscore, "scans": { "virustotal": fvt, "wepawet": "null" } }
 	return json.dumps(fobj)
 	
 def main():

@@ -782,6 +782,16 @@ def PDFiD2Score(xmlDoc):
     result += " " + filename
 
     return result
+    
+def Score2JSON(xmlDoc):
+    score = cPDFScore(xmlDoc)
+    primary_score = score.calculate_primary()
+    secondary_score = score.calculate_secondary()
+    total_score = score.calculate_total()
+    
+    data = { 'primary': str(primary_score), 'seconday': str(secondary_score), 'total': str(total_score) }
+
+    return json.dumps(data)
 
 def connect_database(host, user, password, database):
 	try:
