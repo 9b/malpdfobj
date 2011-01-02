@@ -591,7 +591,7 @@ def PDFiD2JSON(xmlDoc, force):
 
     #grab all keywords
     for node in xmlDoc.documentElement.getElementsByTagName('Keywords')[0].childNodes:
-        name = node.getAttribute('Name')
+        name = unicode(node.getAttribute('Name'),errors='replace')
         count = int(node.getAttribute('Count'))
         if int(node.getAttribute('HexcodeCount')) > 0:
             hexCount = int(node.getAttribute('HexcodeCount'))
