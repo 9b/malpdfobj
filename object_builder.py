@@ -101,6 +101,7 @@ def main():
 				output = build_obj(file, options.dir)
 				if options.mongo:
 					con.insert(json.loads(output))
+					print file
 				if options.verbose:
 					print build_obj(file, options.dir)
 				count += 1
