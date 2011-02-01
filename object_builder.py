@@ -46,7 +46,7 @@ def get_hash_obj(file):
 	return json.dumps(data)
 	
 def get_contents_obj(file):
-	objcontents = json.loads(parser_contents2json.contents(file)
+	objcontents = json.loads(parser_contents2json.contents(file))
 	data = { 'objects': objcontents }
 	return json.dumps(data)	
 	
