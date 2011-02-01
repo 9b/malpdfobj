@@ -735,6 +735,20 @@ def hash2JSON(obj):
 	   
 	jobject = { 'id':id, 'version':version, 'length':length, 'md5': md5 }
 	return jobject
+	
+def content2JSON(obj): 
+	
+	id = obj.id
+	filtered = obj.Stream()
+	encoded = unicode(FormatOutput(obj.content, True),errors='replace')
+	
+	if filtered == []:
+		decoded = 'failed'
+	else:
+		decoded = unicode(FormatOutput(filtered, True),errors='replace')
+        
+	jobject = { 'id':id, 'encoded':encoded, 'decoded':decoded }
+	return jobject
 
 def Main():
     """pdf-parser, use it to parse a PDF document
@@ -848,7 +862,7 @@ def Main():
                         if options.search:
                             if object.Contains(options.search):
                                 PrintObject(object, options)
-                        elif options.object:
+                        elif options.object: #OBJECT
                             if object.id == eval(options.object):
                                 PrintObject(object, options)
                         elif options.reference:

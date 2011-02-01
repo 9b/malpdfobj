@@ -9,6 +9,7 @@ import urllib2
 import os
 import time
 import parser_hash2json
+import parser_contents2json
 import pdfid_mod
 import hashlib
 import hash_maker
@@ -17,7 +18,7 @@ import pymongo
 from pymongo import Connection
 
 def get_vt_obj(file):
-	key = 'a2fec6adeea43e021c3439fc39986b161a06d976f2a534f3cd5fb4333ce2de8f'
+	key = ''
 	url = "https://www.virustotal.com/api/get_file_report.json"
 	parameters = {"resource": file, "key": key}
 	data = urllib.urlencode(parameters)
@@ -44,6 +45,11 @@ def get_hash_obj(file):
 	data = { 'hashes': { 'file': hashes, 'objects': objs} }
 	return json.dumps(data)
 	
+def get_contents_obj(file):
+	objcontents = json.loads(parser_contents2json.contents(file))
+	data = { 'objects': objcontents }
+	return json.dumps(data)	
+	
 def connect_to_mongo(host, port, database, collection):
 	connection = Connection(host, port)
 	db = connection[database]
@@ -62,9 +68,10 @@ def build_obj(file, dir=''):
 	fstructure = json.loads(get_structure(file))
 	fscore = json.loads(get_scores(file))
 	fvt = json.loads(get_vt_obj(vt_hash))
+	fcontents = json.loads(get_contents_obj(file))
 	
 	#build the object and then re-encode
-	fobj = { "hash_data": fhashes, "structure": fstructure, "scores" : fscore, "scans": { "virustotal": fvt, "wepawet": "null" } }
+	fobj = { "hash_data": fhashes, "structure": fstructure, "scores" : fscore, "scans": { "virustotal": fvt, "wepawet": "null" }, "contents" : fcontents }
 	return json.dumps(fobj)
 	
 def main():
