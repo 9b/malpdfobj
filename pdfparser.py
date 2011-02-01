@@ -740,7 +740,10 @@ def content2JSON(obj):
 	
 	id = obj.id
 	filtered = obj.Stream()
-	encoded = unicode(FormatOutput(obj.content, True),errors='replace')
+	if obj.ContainsStream():
+		encoded = 'failed'
+	else:
+		encoded = FormatOutput(obj.content, True)
 	
 	if filtered == []:
 		decoded = 'failed'
@@ -749,7 +752,7 @@ def content2JSON(obj):
         
 	jobject = { 'id':id, 'encoded':encoded, 'decoded':decoded }
 	return jobject
-
+	
 def Main():
     """pdf-parser, use it to parse a PDF document
     """
