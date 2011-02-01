@@ -18,7 +18,7 @@ import pymongo
 from pymongo import Connection
 
 def get_vt_obj(file):
-	key = 'a2fec6adeea43e021c3439fc39986b161a06d976f2a534f3cd5fb4333ce2de8f'
+	key = ''
 	url = "https://www.virustotal.com/api/get_file_report.json"
 	parameters = {"resource": file, "key": key}
 	data = urllib.urlencode(parameters)
@@ -46,7 +46,7 @@ def get_hash_obj(file):
 	return json.dumps(data)
 	
 def get_contents_obj(file):
-	objcontents = json.loads(parser_contents2json.contents(file))
+	objcontents = json.loads(parser_contents2json.contents(file)
 	data = { 'objects': objcontents }
 	return json.dumps(data)	
 	
