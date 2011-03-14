@@ -10,8 +10,8 @@ import os
 import time
 import parser_hash2json
 import parser_contents2json
-import related_entropy
 import pdfid_mod
+import related_entropy
 import hashlib
 import hash_maker
 import optparse
@@ -152,15 +152,21 @@ def main():
 				output = build_obj(file, options.dir)
 				if options.mongo:
 					try:
-						con.insert(json.loads(output))
-						if options.verbose:
-							print file + " inserted"
+						hash = hash_maker.get_hash_data(options.dir + file, "md5") 
+						pres = con.find({"hash_data.file.md5":hash}).count()
+						if pres != 1:
+							con.insert(json.loads(output))
+							if options.verbose:
+								print file + " inserted"
 					except:
 						print "Something went wrong with" + file
 						traceback.print_exc()
-						log.write("ERROR: " + file + "\n")
+						if options.log:	
+							log.write("ERROR: " + file + "\n")
 				count += 1
-		log.close()
+		if options.log:
+			log.close()
+
     else:
         oParser.print_help()
         return
