@@ -148,24 +148,24 @@ def main():
 					print "Sleeping for 5 minutes"
 				time.sleep(300)
 				count = 0
-			else:
-				output = build_obj(file, options.dir)
-				if options.mongo:
-					try:
-						hash = hash_maker.get_hash_data(options.dir + file, "md5") 
-						pres = con.find({"hash_data.file.md5":hash}).count()
-						if pres != 1:
-							con.insert(json.loads(output))
-							if options.verbose:
-								print file + " inserted"
-					except:
-						print "Something went wrong with" + file
-						traceback.print_exc()
-						if options.log:	
-							log.write("ERROR: " + file + "\n")
-				count += 1
-		if options.log:
-			log.close()
+                        else:
+                                hash = hash_maker.get_hash_data(options.dir + file, "md5")
+                                pres = con.find({"hash_data.file.md5":hash}).count()
+                                if pres != 1:
+                                        output = build_obj(file, options.dir)
+                                        if options.mongo:
+                                                try:
+                                                        con.insert(json.loads(output))
+                                                        if options.verbose:
+                                                                print file + " inserted"
+                                                except:
+                                                        print "Something went wrong with" + file
+                                                        traceback.print_exc()
+                                                        if options.log:
+                                                                log.write("ERROR: " + file + "\n")
+                                        count += 1
+                if options.log:
+                        log.close()
 
     else:
         oParser.print_help()
