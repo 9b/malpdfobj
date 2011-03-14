@@ -75,56 +75,186 @@ Options:
     "related": "null", 
     "scans": {
         "virustotal": {
-            "permalink": "http://www.virustotal.com/file-scan/report.html?id=01998715ab51a03cdaddff4ebe004da942ca3ae4e1357f3e1d5d5947b6e20624-1300649382", 
-            "report": [
-                "2011-03-20 19:29:42", 
-                {
-                    "AVG": "JS/Dropper", 
-                    "AhnLab-V3": "", 
-                    "AntiVir": "HTML/Malicious.PDF.Gen", 
-                    "Antiy-AVL": "Exploit/JS.Pdfka", 
-                    "Avast": "JS:Pdfka-gen", 
-                    "Avast5": "JS:Pdfka-gen", 
-                    "BitDefender": "Exploit.PDF-JS.Gen", 
-                    "CAT-QuickHeal": "Exploit.PDF.Malicious.Gen", 
-                    "ClamAV": "", 
-                    "Commtouch": "PDF/Obfusc.F!Camelot", 
-                    "Comodo": "TrojWare.JS.Exploit.Pdfka.vn", 
-                    "DrWeb": "Exploit.PDF.869", 
-                    "Emsisoft": "", 
-                    "F-Prot": "JS/Crypted.DT", 
-                    "F-Secure": "Exploit.PDF-JS.Gen", 
-                    "Fortinet": "JS/Crypt.PDA!tr", 
-                    "GData": "Exploit.PDF-JS.Gen", 
-                    "Ikarus": "", 
-                    "Jiangmin": "", 
-                    "K7AntiVirus": "", 
-                    "Kaspersky": "Exploit.JS.Pdfka.vn", 
-                    "McAfee": "Exploit-PDF.q.gen!stream", 
-                    "McAfee-GW-Edition": "Heuristic.BehavesLike.PDF.Suspicious.C", 
-                    "Microsoft": "Exploit:Win32/Pidief.O", 
-                    "NOD32": "JS/Exploit.Pdfka.NLY", 
-                    "Norman": "JS/Shellcode.AA", 
-                    "PCTools": "Downloader.Generic", 
-                    "Panda": "Exploit/PDF.Gen.B", 
-                    "Prevx": "", 
-                    "Rising": "", 
-                    "SUPERAntiSpyware": "", 
-                    "Sophos": "Mal/PdfEx-C", 
-                    "Symantec": "Downloader", 
-                    "TheHacker": "", 
-                    "TrendMicro": "JS_PIDIEF.SMC", 
-                    "TrendMicro-HouseCall": "JS_PIDIEF.SMC", 
-                    "VBA32": "Exploit.JS.Pdfka.vn", 
-                    "VIPRE": "Exploit.PDF-JS.Gen (v)", 
-                    "ViRobot": "JS.Pdfka.2996", 
-                    "VirusBuster": "JS.Pdfka.Gen.28", 
-                    "eSafe": "", 
-                    "eTrust-Vet": "PDF/Pidief.ML", 
-                    "nProtect": ""
+            "report": {
+                "last_scan": "2011-03-20 19:29:42", 
+                "permalink": "http://www.virustotal.com/file-scan/report.html?id=01998715ab51a03cdaddff4ebe004da942ca3ae4e1357f3e1d5d5947b6e20624-1300649382", 
+                "results": {
+                    "scanners": [
+                        {
+                            "antivirus": "nProtect", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "CAT-QuickHeal", 
+                            "signature": "Exploit.PDF.Malicious.Gen"
+                        }, 
+                        {
+                            "antivirus": "McAfee", 
+                            "signature": "Exploit-PDF.q.gen!stream"
+                        }, 
+                        {
+                            "antivirus": "K7AntiVirus", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "TheHacker", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "VirusBuster", 
+                            "signature": "JS.Pdfka.Gen.28"
+                        }, 
+                        {
+                            "antivirus": "NOD32", 
+                            "signature": "JS/Exploit.Pdfka.NLY"
+                        }, 
+                        {
+                            "antivirus": "F-Prot", 
+                            "signature": "JS/Crypted.DT"
+                        }, 
+                        {
+                            "antivirus": "Symantec", 
+                            "signature": "Downloader"
+                        }, 
+                        {
+                            "antivirus": "Norman", 
+                            "signature": "JS/Shellcode.AA"
+                        }, 
+                        {
+                            "antivirus": "TrendMicro-HouseCall", 
+                            "signature": "JS_PIDIEF.SMC"
+                        }, 
+                        {
+                            "antivirus": "Avast", 
+                            "signature": "JS:Pdfka-gen"
+                        }, 
+                        {
+                            "antivirus": "eSafe", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "ClamAV", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "Kaspersky", 
+                            "signature": "Exploit.JS.Pdfka.vn"
+                        }, 
+                        {
+                            "antivirus": "BitDefender", 
+                            "signature": "Exploit.PDF-JS.Gen"
+                        }, 
+                        {
+                            "antivirus": "ViRobot", 
+                            "signature": "JS.Pdfka.2996"
+                        }, 
+                        {
+                            "antivirus": "Emsisoft", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "Comodo", 
+                            "signature": "TrojWare.JS.Exploit.Pdfka.vn"
+                        }, 
+                        {
+                            "antivirus": "F-Secure", 
+                            "signature": "Exploit.PDF-JS.Gen"
+                        }, 
+                        {
+                            "antivirus": "DrWeb", 
+                            "signature": "Exploit.PDF.869"
+                        }, 
+                        {
+                            "antivirus": "VIPRE", 
+                            "signature": "Exploit.PDF-JS.Gen (v)"
+                        }, 
+                        {
+                            "antivirus": "AntiVir", 
+                            "signature": "HTML/Malicious.PDF.Gen"
+                        }, 
+                        {
+                            "antivirus": "TrendMicro", 
+                            "signature": "JS_PIDIEF.SMC"
+                        }, 
+                        {
+                            "antivirus": "McAfee-GW-Edition", 
+                            "signature": "Heuristic.BehavesLike.PDF.Suspicious.C"
+                        }, 
+                        {
+                            "antivirus": "Sophos", 
+                            "signature": "Mal/PdfEx-C"
+                        }, 
+                        {
+                            "antivirus": "eTrust-Vet", 
+                            "signature": "PDF/Pidief.ML"
+                        }, 
+                        {
+                            "antivirus": "Jiangmin", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "Antiy-AVL", 
+                            "signature": "Exploit/JS.Pdfka"
+                        }, 
+                        {
+                            "antivirus": "Microsoft", 
+                            "signature": "Exploit:Win32/Pidief.O"
+                        }, 
+                        {
+                            "antivirus": "SUPERAntiSpyware", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "Prevx", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "GData", 
+                            "signature": "Exploit.PDF-JS.Gen"
+                        }, 
+                        {
+                            "antivirus": "Commtouch", 
+                            "signature": "PDF/Obfusc.F!Camelot"
+                        }, 
+                        {
+                            "antivirus": "AhnLab-V3", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "VBA32", 
+                            "signature": "Exploit.JS.Pdfka.vn"
+                        }, 
+                        {
+                            "antivirus": "PCTools", 
+                            "signature": "Downloader.Generic"
+                        }, 
+                        {
+                            "antivirus": "Rising", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "Ikarus", 
+                            "signature": ""
+                        }, 
+                        {
+                            "antivirus": "Fortinet", 
+                            "signature": "JS/Crypt.PDA!tr"
+                        }, 
+                        {
+                            "antivirus": "AVG", 
+                            "signature": "JS/Dropper"
+                        }, 
+                        {
+                            "antivirus": "Panda", 
+                            "signature": "Exploit/PDF.Gen.B"
+                        }, 
+                        {
+                            "antivirus": "Avast5", 
+                            "signature": "JS:Pdfka-gen"
+                        }
+                    ]
                 }
-            ], 
-            "result": 1
+            }
         }, 
         "wepawet": "null"
     }, 

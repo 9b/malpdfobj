@@ -21,14 +21,31 @@ import traceback
 from pymongo import Connection
 
 def get_vt_obj(file):
-	key = ''
+	key = 'YOUR_API_KEY'
 	url = "https://www.virustotal.com/api/get_file_report.json"
 	parameters = {"resource": file, "key": key}
 	data = urllib.urlencode(parameters)
 	req = urllib2.Request(url, data)
 	response = urllib2.urlopen(req)
 	vtobj = response.read()
-	return vtobj
+
+	preprocess = json.loads(vtobj)
+	report = preprocess.get("report")
+	permalink = preprocess.get("permalink")
+	result = preprocess.get("result")
+
+	if int(result) == 1:
+		scanners = []
+		last_scan = report[0]
+		for k, v in report[1].iteritems():
+			scanner = { 'antivirus' : k, 'signature' : v }
+			scanners.append(scanner)
+
+		vtobj = { 'report' : { 'last_scan':last_scan, 'permalink':permalink, 'results' : { 'scanners' : scanners } } }
+	else:
+		vtobj = { 'report' : { 'error': "not available" } }
+
+	return json.dumps(vtobj)
 	
 def get_structure(file):
 	structureobj = pdfid_mod.PDFiD2JSON(pdfid_mod.PDFiD(file, True, True, False, True), True)
@@ -144,7 +161,6 @@ def main():
 						log.write("ERROR: " + file + "\n")
 				count += 1
 		log.close()
-
     else:
         oParser.print_help()
         return
