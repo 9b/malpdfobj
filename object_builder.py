@@ -11,10 +11,13 @@ import time
 import parser_hash2json
 import parser_contents2json
 import pdfid_mod
+import related_entropy
 import hashlib
 import hash_maker
 import optparse
 import pymongo
+import MySQLdb
+import traceback
 from pymongo import Connection
 
 def get_vt_obj(file):
@@ -40,15 +43,19 @@ def get_object_details(file):
 	return objdetails
 
 def get_hash_obj(file):
-	objs = json.loads(get_object_details(file)) #decode because data needs to be re-encoded
+	#objs = json.loads(get_object_details(file)) #decode because data needs to be re-encoded
 	hashes = hash_maker.get_hash_object(file)
-	data = { 'hashes': { 'file': hashes, 'objects': objs} }
+	data = { 'file': hashes }
 	return json.dumps(data)
 	
 def get_contents_obj(file):
 	objcontents = json.loads(parser_contents2json.contents(file))
 	data = { 'objects': objcontents }
 	return json.dumps(data)	
+
+def get_related_files(file):
+	related_results = related_entropy.shot_caller(file)
+	return json.dumps(related_results)
 	
 def connect_to_mongo(host, port, database, collection):
 	connection = Connection(host, port)
@@ -56,6 +63,18 @@ def connect_to_mongo(host, port, database, collection):
 	collection = db[collection]
 	return collection
 	
+def connect_database(host, user, password, database): #9b+
+        try:
+                conn = MySQLdb.connect (host, user, password, database)
+                return conn
+        except MySQLdb.Error, e:
+                print "Error %d: %s" % (e.args[0], e.args[1])
+                sys.exit(1)
+        
+def kill_database_connection(conn): #9b+
+        conn.commit()
+        conn.close()
+
 def build_obj(file, dir=''):
 
 	if dir != '':
@@ -69,9 +88,11 @@ def build_obj(file, dir=''):
 	fscore = json.loads(get_scores(file))
 	fvt = json.loads(get_vt_obj(vt_hash))
 	fcontents = json.loads(get_contents_obj(file))
+#	frelated = json.loads(get_related_files(file))	
+	frelated = "null"
 	
 	#build the object and then re-encode
-	fobj = { "hash_data": fhashes, "structure": fstructure, "scores" : fscore, "scans": { "virustotal": fvt, "wepawet": "null" }, "contents" : fcontents }
+	fobj = { "hash_data": fhashes, "structure": fstructure, "scores" : fscore, "scans": { "virustotal": fvt, "wepawet": "null" }, "contents" : fcontents, 'related' : frelated }
 	return json.dumps(fobj)
 	
 def main():
@@ -80,8 +101,12 @@ def main():
     oParser.add_option('-d', '--dir', default='', type='string', help='dir to build an object from')
     oParser.add_option('-m', '--mongo', action='store_true', default=False, help='dump to a mongodb database')
     oParser.add_option('-v', '--verbose', action='store_true', default=False, help='verbose outpout')
+    oParser.add_option('-l', '--log', action='store_true', default=False, help='log errors to file')
     (options, args) = oParser.parse_args()
-    
+
+    if options.log:
+	log = open("error_log",'w')    
+
     if options.mongo:
     	con = connect_to_mongo("localhost", 27017, "pdfs", "malware")
 
@@ -109,12 +134,17 @@ def main():
 			else:
 				output = build_obj(file, options.dir)
 				if options.mongo:
-					con.insert(json.loads(output))
-					if options.verbose:
-						print file + " inserted"
-				if options.verbose:
-					print build_obj(file, options.dir)
+					try:
+						con.insert(json.loads(output))
+						if options.verbose:
+							print file + " inserted"
+					except:
+						print "Something went wrong with" + file
+						traceback.print_exc()
+						log.write("ERROR: " + file + "\n")
 				count += 1
+		log.close()
+
     else:
         oParser.print_help()
         return

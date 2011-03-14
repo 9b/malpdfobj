@@ -125,7 +125,10 @@ class cPDFDate:
                     return None
 
 def fEntropy(countByte, countTotal):
-    x = float(countByte) / countTotal
+#BSD fucked this up *bug
+    x = 0
+    if countByte != 0:
+        x = float(countByte) / countTotal
     if x > 0:
         return - x * math.log(x, 2)
     else:
@@ -587,6 +590,7 @@ def PDFiD2JSON(xmlDoc, force):
     nonStreamEntropy = xmlDoc.documentElement.getAttribute('NonStreamEntropy')
     
     keywords = []
+    components = []
     dates = []
 
     #grab all keywords
@@ -597,8 +601,13 @@ def PDFiD2JSON(xmlDoc, force):
             hexCount = int(node.getAttribute('HexcodeCount'))
         else:
             hexCount = 0
-        keyword = { 'count':count, 'hexcodecount':hexCount, 'name':name }
-        keywords.append(keyword)
+	if name[0] == '/' and count > 0:
+        	keyword = { 'count':count, 'hexcodecount':hexCount, 'name':name }
+        	keywords.append(keyword)
+	else:
+		if count > 0:
+			component = { 'count':count, 'hexcodecount':hexCount, 'name':name }
+			components.append(component)
 
     #grab all date information
     for node in xmlDoc.documentElement.getElementsByTagName('Dates')[0].childNodes:
@@ -607,7 +616,7 @@ def PDFiD2JSON(xmlDoc, force):
         date = { 'name':name, 'value':value }
         dates.append(date)
 
-    data = { 'countEof':countEof, 'countChatAfterLastEof':countChatAfterLastEof, 'totalEntropy':totalEntropy, 'streamEntropy':streamEntropy, 'nonStreamEntropy':nonStreamEntropy, 'errorOccured':errorOccured, 'errorMessage':errorMessage, 'filename':filename, 'header':header, 'isPdf':isPdf, 'version':version, 'entropy':entropy, 'keywords': { 'keyword': keywords }, 'dates': { 'date':dates} }
+    data = { 'filesize': filesize, 'countEof':countEof, 'countChatAfterLastEof':countChatAfterLastEof, 'totalEntropy':totalEntropy, 'streamEntropy':streamEntropy, 'nonStreamEntropy':nonStreamEntropy, 'errorOccured':errorOccured, 'errorMessage':errorMessage, 'filename':filename, 'header':header, 'isPdf':isPdf, 'version':version, 'entropy':entropy, 'keywords': { 'keyword': keywords }, 'dates': { 'date':dates}, 'components': { 'component': components } }
     return json.dumps(data)
 
 
@@ -790,7 +799,7 @@ def Score2JSON(xmlDoc):
     secondary_score = score.calculate_secondary()
     total_score = score.calculate_total()
     
-    data = { 'primary': str(primary_score), 'seconday': str(secondary_score), 'total': str(total_score) }
+    data = { 'primary': str(primary_score), 'secondary': str(secondary_score), 'total': str(total_score) }
 
     return json.dumps(data)
 
