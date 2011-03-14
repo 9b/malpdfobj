@@ -10,8 +10,8 @@ import os
 import time
 import parser_hash2json
 import parser_contents2json
-import pdfid_mod
 import related_entropy
+import pdfid_mod
 import hashlib
 import hash_maker
 import optparse
