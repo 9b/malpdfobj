@@ -43,7 +43,7 @@ def get_vt_obj(file):
 
 		vtobj = { 'report' : { 'last_scan':last_scan, 'permalink':permalink, 'results' : { 'scanners' : scanners } } }
 	else:
-		vtobj = { 'report' : { 'error': "not available" } }
+		vtobj = { 'report' : { 'results': {'scanners' : [] } } }
 
 	return json.dumps(vtobj)
 	
