@@ -52,7 +52,7 @@ def get_structure(file):
 	return structureobj
 	
 def get_scores(file):
-	scoreobj = pdfid_mod.Score2JSON(pdfid_mod.PDFiD(file, True, True, False, True))
+	scoreobj = pdfid_mod.Score2JSON(pdfid_mod.PDFiD(file, False, True, False, True))
 	return scoreobj
 
 def get_object_details(file):
